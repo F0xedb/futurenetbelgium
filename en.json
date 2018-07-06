@@ -1,4 +1,4 @@
-{
+﻿{
   "pdf":  "extra",
   "title": "FuturenetBelgium",
   "index": "home",
@@ -43,7 +43,7 @@
   "seq2": "ABOUT",
   "seq2sub": "Our story",
   "seq2-1-1": "1999",
-  "seq2-1-2": "TOM WAS BORN",
+  "seq2-1-2": "BART WAS BORN",
   "seq2-1-3": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias atque aut blanditiis commodi consequuntur debitis delectus dicta dolore fugit illo iure, nemo odio pariatur qui sapiente, sed voluptates. Eaque, odio.",
   "seq2-2-1": "2014",
   "seq2-2-2": "HE STARTED PROGRAMMING",
