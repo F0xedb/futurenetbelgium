@@ -37,7 +37,7 @@ function travel(id){
         fill.href = "http://" + GET["ref"];
     } else{
         fill.innerHTML = "Join Bart";
-        fill.href = "http://proost.futurenet.xyz";
+        fill.href = "http://proost.fn.xyz";
     }
 }
 
