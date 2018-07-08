@@ -9,13 +9,14 @@ var allowed = {
     "people":[
         "proost.fn.xyz",
         "ivanow.fn.xyz",
-        "timoprins.fn.xyz",
-        "www.facebook.com"
+        "Timoprins.fn.xyz",
+        "driesstappers.fn.xyz"
+
     ],
     "text":[
         "Bart",
         "Ivan",
-        "Tim",
-        "facebook"
+        "Tim Oprins",
+        "Dries Stappers"
     ]
 };
