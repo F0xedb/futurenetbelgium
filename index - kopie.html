@@ -22,9 +22,10 @@
     <link href="css/style2.css" rel="stylesheet">
     <link href="../dist/css/flags.css" rel="stylesheet">
 
+
   </head>
 
-  <body id="page-top" onload="init()">
+  <body id="page-top">
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" style="background-color: #0a3c78!important;">
@@ -111,7 +112,7 @@
           </div>
         </div>
         <div class="row text-center">
-          <div id = "barcode" class="col-md-4">
+          <div class="col-md-4">
             <a href="" data-toggle="modal" data-target="#part1" style="text-decoration: none;">
               <span class="fa-stack fa-4x">
                 <i class="fa fa-circle fa-stack-2x text-primary"></i>
@@ -121,7 +122,7 @@
               <p class="text-muted" trans="advertentie"></p>
             </a>
           </div>
-          <div id = "sitemap" class="col-md-4">
+          <div class="col-md-4">
             <a href="" data-toggle="modal" data-target="#part2" style="text-decoration: none;">
               <span class="fa-stack fa-4x">
                 <i class="fa fa-circle fa-stack-2x text-primary"></i>
@@ -131,7 +132,7 @@
               <p class="text-muted" trans="matrix"></p>
             </a>
           </div>
-          <div id = "database" class="col-md-4">
+          <div class="col-md-4">
             <a href="" data-toggle="modal" data-target="#part3" style="text-decoration: none;">
               <span class="fa-stack fa-4x">
                 <i class="fa fa-circle fa-stack-2x text-primary"></i>
@@ -183,14 +184,14 @@
               <p class="text-muted" trans="port2-1"></p>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 portfolio-item"  >
+          <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
-              </div>	 
-                <img class="img-fluid2" src="img/portfolio/oscare_logo.png" alt="" >
+              </div>
+              <img class="img-fluid2" src="img/portfolio/oscare_logo.png" alt="">
             </a>
             <div class="portfolio-caption">
               <h4 trans="port3"></h4>
@@ -293,8 +294,8 @@
         </div>
         <div class="row">
           <div class="col-sm-6">
-            <div class="team-member" >
-              <img class="rollover img/team/bart1b.jpg  mx-auto rounded-circle" src="img/team/bart1a.jpg" alt=""  onclick="travelbart()" >
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="img/team/bart.jpg" alt="" onclick="travelbart()">
               <h4 trans="member1"></h4>
               <p class="text-muted" trans="member1position"></p>
             </div>
@@ -302,7 +303,7 @@
 
           <div class="col-sm-6">
             <div class="team-member">
-              <img class="rollover img/team/ivan1b.jpg mx-auto rounded-circle" src="img/team/ivan.png" alt="" onclick="travelivan()">
+              <img class="mx-auto rounded-circle" src="img/team/ivan.png" alt="" onclick="travelivan()">
               <h4 trans="member2"></h4>
               <p class="text-muted" trans="member2position"></p>
             </div>
@@ -314,9 +315,6 @@
           </div>
         </div>
       </div>
-	  
-
-
     </section>
 
 
@@ -416,7 +414,7 @@
                   <!-- Project Details Go Here -->
                   <h2 class="text-uppercase" trans="modtitle1"></h2>
                   <p class="item-intro text-muted" trans="modsub1"></p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/plan.png" alt="">
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/fost.png" alt="">
                   <p trans="modtext1"></p>
                   <button class="btn btn-primary" data-dismiss="modal" type="button" trans="closesub1">
                     <i class="fa fa-times"></i>
@@ -574,8 +572,6 @@
 
 
 
-
-
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
@@ -595,7 +591,6 @@
     <script src="../dist/js/jquery.flagstrap.js"></script>
 
     <script>
-	
         $('#basic').flagStrap();
 
         $('#origin').flagStrap({
@@ -632,9 +627,6 @@
 
     </script>
 
-	<!-- foto's rollover toegevoegd DB-->
-	<script src="js/rollover.js"></script>
-	
 
   </body>
 
