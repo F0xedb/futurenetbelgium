@@ -150,6 +150,38 @@ footer{
     margin-bottom: 10px;
 }
 
+.fa-barcode:hover {
+	/* font-size: 1em; */
+	color: black;
+}
+
+#barcode a:hover {
+	font-size:18px;
+	opacity:2;
+	font: black;
+}
+
+.fa-sitemap:hover {
+    color: black;
+}
+
+#sitemap a:hover {
+	font-size:18px;
+	opacity:2;
+	font: black;
+}
+
+.fa-database:hover {
+    color: black;
+}
+
+#database a:hover {
+	font-size:18px;
+	opacity:2;
+	font: black;
+
+}
+
 
 @-moz-keyframes spin { 100% { -moz-transform: rotateX(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotateX(360deg); } }
