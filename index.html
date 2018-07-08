@@ -3,7 +3,7 @@
 
   <head>
 
-    <meta charset="utf-16">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Futurenetbelgium distributors of futurenet">
     <meta name="author" content="Tom Meyers">
@@ -345,7 +345,7 @@
         <div class="row">
           <div class="col-sm-6">
             <div class="team-member" >
-              <img class="rollover img/team/bart1b.jpg  mx-auto rounded-circle" src="img/team/bart1a.jpg" alt=""  onclick="travelbart()" >
+              <img class="rollover mx-auto rounded-circle" onmouseover="this.src='img/team/bart1b.jpg'" onmouseout="this.src='img/team/bart1a.jpg';" src="img/team/bart1a.jpg" alt=""  onclick="travelbart()" >
               <h4 trans="member1"></h4>
               <p class="text-muted" trans="member1position"></p>
             </div>
@@ -353,7 +353,7 @@
 
           <div class="col-sm-6">
             <div class="team-member">
-              <img class="rollover img/team/ivan1b.jpg mx-auto rounded-circle" src="img/team/ivan.png" alt="" onclick="travelivan()">
+              <img class="rollover mx-auto rounded-circle" onmouseover="this.src='img/team/ivan1b.jpg'" onmouseout="this.src='img/team/ivan.png';" src="img/team/ivan.png" alt="" onclick="travelivan()">
               <h4 trans="member2"></h4>
               <p class="text-muted" trans="member2position"></p>
             </div>
@@ -365,9 +365,6 @@
           </div>
         </div>
       </div>
-	  
-
-
     </section>
 
 
@@ -855,6 +852,7 @@
 
     </script>
 
+
 	<!-- foto's rollover toegevoegd DB-->
 	<script src="js/rollover.js"></script>
 	
@@ -1096,7 +1094,5 @@ function drawChartBarWWF() {
 
 
 </script>
-
   </body>
-
 </html>

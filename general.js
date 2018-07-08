@@ -11,6 +11,7 @@ var allowed = {
         "ivanow.fn.xyz",
         "Timoprins.fn.xyz",
         "driesstappers.fn.xyz"
+
     ],
     "text":[
         "Bart",
