@@ -7,15 +7,15 @@ var data = {
 var allowed = {
     "all": false,
     "people":[
-        "proost.futurenet.xyz",
+        "proost.fn.xyz",
         "ivanow.fn.xyz",
-        "www.google.com",
+        "timoprins.fn.xyz",
         "www.facebook.com"
     ],
     "text":[
         "Bart",
         "Ivan",
-        "google",
+        "Tim",
         "facebook"
     ]
 };
