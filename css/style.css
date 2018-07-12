@@ -193,7 +193,7 @@ footer{
     color: black;
 }
 
-.chart {
+.chartDB {
     /* Three image containers (use 25% for four, and 50% for two, 33.33% for 3 images etc) */
   float: left;
   width: 50%;

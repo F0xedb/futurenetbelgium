@@ -99,19 +99,36 @@
     <header class="masthead">
       <div class="container">
         <div class="intro-text overlay" style="padding-bottom: 50px;padding-top: 50px;margin-bottom: 25vh;">
+		 
           <div class="intro-lead-in" trans="title"></div>
-          <div class="intro-heading text-uppercase" trans="subtitle"></div>
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#" trans="button" onclick="MainbtnClick()"></a>
+          <div class="intro-heading text-uppercase" trans="subtitle"></div>  
+		     <div class="example">
+			<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" trans="button" href="#" onclick="MainbtnClick()"></a>
+		  </div>
         </div>
       </div>
     </header>
+	
+	<!-- OverzichtModel -->
+	 <section id="overview" class="bg-light">
+      <div class="container">
+        <div class="row">
+		   <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase" style="font-size: 32px;" trans="overzichtmodel"></h2>
+            <p class="section-subheading text-muted" trans="overzichtmodel2"></p>
+          </div>
+		<img src="img/portfolio/2full.jpg" alt="TEST TEST NOG JUISTE FOTO">
+		
+		</div>
+      </div>
+    </section>
 
     <!-- Services -->
     <section id="services">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase" trans="verdienste"></h2>
+            <h2 class="section-heading text-uppercase" style="font-size: 32px;" trans="verdienste"></h2>
             <h3 class="section-subheading text-muted" trans="quote"></h3>
           </div>
         </div>
@@ -275,6 +292,9 @@
                   </div>
                   <div class="timeline-body">
                     <p class="text-muted" trans="seq2-1-3"></p>
+					<a href="refLinks.html" id="refLink" target="_blank">
+					 <p  style="text-bold; color:black" trans="seq2-1-4"></p>
+					</a>
                   </div>
                 </div>
               </li>
@@ -308,7 +328,7 @@
               </li>
               <li class="timeline-inverted">
                 <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
+						<img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
@@ -322,9 +342,11 @@
               </li>
               <li class="timeline-inverted">
                 <div class="timeline-image">
-                  <h4>Be Part
-                    <br>Of Our
-                    <br>Story!</h4>
+					<a href="https://www.w3schools.com/html/html_links.asp" target="_blank">
+						<h4>Be Part
+						<br>Of Our
+						<br>Story!</h4>
+					</a>
                 </div>
               </li>
             </ul>
@@ -345,7 +367,7 @@
         <div class="row">
           <div class="col-sm-6">
             <div class="team-member" >
-              <img class="rollover mx-auto rounded-circle" onmouseover="this.src='img/team/bart1b.jpg'" onmouseout="this.src='img/team/bart1a.jpg';" src="img/team/bart1a.jpg" alt=""  onclick="travelbart()" >
+              <img class="mx-auto rounded-circle" onmouseover="this.src='img/team/bart1b.jpg'" onmouseout="this.src='img/team/bart1a.jpg';" src="img/team/bart1a.jpg" alt=""  onclick="travelbart()" >
               <h4 trans="member1"></h4>
               <p class="text-muted" trans="member1position"></p>
             </div>
@@ -353,7 +375,7 @@
 
           <div class="col-sm-6">
             <div class="team-member">
-              <img class="rollover mx-auto rounded-circle" onmouseover="this.src='img/team/ivan1b.jpg'" onmouseout="this.src='img/team/ivan.png';" src="img/team/ivan.png" alt="" onclick="travelivan()">
+              <img class="mx-auto rounded-circle" onmouseover="this.src='img/team/ivan1b.jpg'" onmouseout="this.src='img/team/ivan.png';" src="img/team/ivan.png" alt="" onclick="travelivan()">
               <h4 trans="member2"></h4>
               <p class="text-muted" trans="member2position"></p>
             </div>
@@ -466,16 +488,16 @@
                   <p class="item-intro text-muted" trans="modsub1"></p>
 				  <!-- link op image met rollover bijgevoegd DB-->
 				  <a href="http://www.planinternational.be" target="_blank">
-					<img class="rollover img/portfolio/visit.png img-fluid d-block mx-auto" src="img/portfolio/plan.png" alt="">
+					<img class="img-fluid d-block mx-auto" src="img/portfolio/plan.png" alt="" onmouseover="this.src='img/portfolio/visit.png'" onmouseout="this.src='img/portfolio/plan.png';">
 				  </a>
                   <p trans="modtext1"></p>				  					
 				  <!-- Charts bijgevoegd DB-->
 					<div >
 						<div class="row">
-							<div class="chart">
+							<div class="chartDB">
 								<div id="piechartplan" style="width:100%"></div>
 							</div>
-							<div class="chart">
+							<div class="chartDB">
 								<div id="barchartplan" style="width:100%"></div>
 							</div>
 						</div>
@@ -510,16 +532,16 @@
                   <p class="item-intro text-muted" trans="modsub2"></p>
 				  <!-- link op image met rollover bijgevoegd DB-->
 				  <a href="http://helpingdogs.be/newsite2/index.php" target="_blank">
-                  <img class="rollover img/portfolio/visit.png img-fluid d-block mx-auto" src="img/portfolio/dog.jpg" alt="">
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/dog.jpg" alt="" onmouseover="this.src='img/portfolio/visit.png'" onmouseout="this.src='img/portfolio/dog.jpg';">
 				  </a>
                   <p trans="modtext2"></p>
 				  <!-- Charts bijgevoegd -->
 					<div >
 						<div class="row">
-							<div class="chart">
+							<div class="chartDB">
 								<div id="piechartdog" style="width:100%"></div>
 							</div>
-							<div class="chart">
+							<div class="chartDB">
 								<div id="barchartdog" style="width:100%"></div>
 							</div>
 						</div>
@@ -553,16 +575,16 @@
                   <p class="item-intro text-muted" trans="modsub3"></p>
 				  				  <!-- link op image met rollover bijgevoegd DB-->
 				  <a href="http://www.oscare.be/" target="_blank">
-                  <img class="rollover img/portfolio/visit.png img-fluid d-block mx-auto" src="img/portfolio/os.jpg" alt="">
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/os.jpg" alt="" onmouseover="this.src='img/portfolio/visit.png'" onmouseout="this.src='img/portfolio/os.jpg';">
 				  </a>
                   <p trans="modtext3"></p>
 				  <!-- Charts bijgevoegd -->
 					<div >
 						<div class="row">
-							<div class="chart">
+							<div class="chartDB">
 								<div id="piechartoscare" style="width:100%"></div>
 							</div>
-							<div class="chart">
+							<div class="chartDB">
 								<div id="barchartoscare" style="width:100%"></div>
 							</div>
 						</div>
@@ -596,16 +618,16 @@
                   <p class="item-intro text-muted" trans="modsub4"></p>
 				  <!-- link op image met rollover bijgevoegd DB-->
 				  <a href="http://www.komoptegenkanker.be/" target="_blank">
-                  <img class="rollover img/portfolio/visit.png  img-fluid d-block mx-auto" src="img/portfolio/kankersmall.jpg" alt="">
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/kankersmall.jpg" alt="" onmouseover="this.src='img/portfolio/visit.png'" onmouseout="this.src='img/portfolio/kankersmall.jpg';">
 				  </a>
                   <p trans="modtext4"></p>
 				  <!-- Charts bijgevoegd -->
 					<div >
 						<div class="row">
-							<div class="chart">
+							<div class="chartDB">
 								<div id="piechartkanker" style="width:100%"></div>
 							</div>
-							<div class="chart">
+							<div class="chartDB">
 								<div id="barchartkanker" style="width:100%"></div>
 							</div>
 						</div>
@@ -639,16 +661,16 @@
                   <p class="item-intro text-muted" trans="modsub5"></p>
 				  <!-- link op image met rollover bijgevoegd DB-->
 				  <a href="http://www.cliniclowns.be/" target="_blank">
-                  <img class="rollover img/portfolio/visit.png  img-fluid d-block mx-auto" src="img/portfolio/clinismall.png" alt="">
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/clinismall.png" alt="" onmouseover="this.src='img/portfolio/visit.png'" onmouseout="this.src='img/portfolio/clinismall.png';">
 				  </a>
                   <p trans="modtext5"></p>
 				  <!-- Charts bijgevoegd -->
 					<div >
 						<div class="row">
-							<div class="chart">
+							<div class="chartDB">
 								<div id="piechartclini" style="width:100%"></div>
 							</div>
-							<div class="chart">
+							<div class="chartDB">
 								<div id="barchartclini" style="width:100%"></div>
 							</div>
 						</div>
@@ -682,16 +704,17 @@
                   <p class="item-intro text-muted" trans="modsub6"></p>
 				  <!-- link op image met rollover bijgevoegd DB-->
 				  <a href="https://wwf.be/" target="_blank">
-                  <img class="rollover img/portfolio/visit.png  img-fluid d-block mx-auto" src="img/portfolio/wwfsmall.png" alt="">
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/wwfsmall.png" alt="" onmouseover="this.src='img/portfolio/visit.png'" onmouseout="this.src='img/portfolio/wwfsmall.png';">
 				  </a>
                   <p trans="modtext6"></p>
 				  <!-- Charts bijgevoegd -->
+				  <!-- Charts bijgevoegd DB-->
 					<div >
 						<div class="row">
-							<div class="chart">
+							<div class="chartDB">
 								<div id="piechartwwf" style="width:100%"></div>
 							</div>
-							<div class="chart">
+							<div class="chartDB">
 								<div id="barchartwwf" style="width:100%"></div>
 							</div>
 						</div>
@@ -723,8 +746,16 @@
                   <!-- Project Details Go Here -->
                   <h2 class="text-uppercase" trans="modptitle1"></h2>
                   <p class="item-intro text-muted" trans="modpsub1"></p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/add.png" alt="">
-                  <p trans="modptext1"></p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/2simpelsteps.png" alt="">
+                  <p style="text-align:left" trans="modptext1"></p>
+				  <a href="https://www.w3schools.com" target="_blank">
+				    <img class="img-fluid d-block mx-auto" src="img/portfolio/small.png" alt="" >
+				  </a>
+				  <p style="text-align:left" trans="modptext1-1"></p>
+				  <img class="img-fluid d-block mx-auto" src="img/portfolio/small.png" alt="">
+				  <p style="text-align:left" trans="modptext1-2"></p>
+				  <p><a class="link" href="show.html" trans="modplink">Voor meer informatie, zie Gallery. Klik daarvoor hier</a></p>
+				  
                   <button class="btn btn-primary" data-dismiss="modal" type="button" trans="closepsub1">
                     <i class="fa fa-times"></i>
                   </button>
@@ -779,8 +810,19 @@
                   <!-- Project Details Go Here -->
                   <h2 class="text-uppercase" trans="modptitle3"></h2>
                   <p class="item-intro text-muted" trans="modpsub3"></p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/fut.jpg" alt="">
+				  <img class="img-fluid d-block mx-auto" src="img/portfolio/FuturoCoin.jpg" alt="">
                   <p trans="modptext3"></p>
+				  <img class="img-fluid d-block mx-auto" src="img/portfolio/fut.jpg" alt="">
+				  <hr/>
+				  <p class="item-intro text-muted" trans="modpsub3-1"></p>
+				  <div class="column">
+					<img class="img-fluid d-block mx-auto" src="img/portfolio/FuturoMining1.jpg" alt="">
+					</div>
+				  <div class="column">
+					<img class="img-fluid d-block mx-auto" src="img/portfolio/FuturoMining2.jpg" alt="">
+				  </div>
+				  <p trans="modptext3-1"></p>
+				  <img class="img-fluid d-block mx-auto" src="img/portfolio/FuturoMining3.jpg" alt="">
                   <button class="btn btn-primary" data-dismiss="modal" type="button" trans="closepsub3">
                     <i class="fa fa-times"></i>
                   </button>
@@ -858,241 +900,7 @@
 	
 	<!-- chart toegevoegd DB-->
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-	<script type="text/javascript">
-// Load google charts
-google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChartPiePlan);
-google.charts.setOnLoadCallback(drawChartBarPlan);
-google.charts.setOnLoadCallback(drawChartPieDog);
-google.charts.setOnLoadCallback(drawChartBarDog);
-google.charts.setOnLoadCallback(drawChartPieOscare);
-google.charts.setOnLoadCallback(drawChartBarOscare);
-google.charts.setOnLoadCallback(drawChartPieKanker);
-google.charts.setOnLoadCallback(drawChartBarKanker);
-google.charts.setOnLoadCallback(drawChartPieClini);
-google.charts.setOnLoadCallback(drawChartBarClini);
-google.charts.setOnLoadCallback(drawChartPieWWF);
-google.charts.setOnLoadCallback(drawChartBarWWF);
+	<script src="js/chartDB.js"></script>
 
-// Draw the chart and set the chart values
-function drawChartPiePlan() {
-  var data = google.visualization.arrayToDataTable([
-  ['Charity', 'Percentage'],
-  ['Plan International', 25],
-  ['Helping Dogs', 10],
-  ['Oscare', 5],
-  ['Kankerfonds', 25],
-  ['CliniClowns', 20],
-  ['WWF', 15]
-]);
-
-  // Optional; add a title and set the width and height of the chart
-  var options = {'title':'Distribution Charity up till now (in %)', 'width':400, 'height':400, slices: { 0: {offset: 0.2} } , is3D: true};
-
-  // Display the chart inside the <div> element with id="piechart"
-  var chart = new google.visualization.PieChart(document.getElementById('piechartplan'));
-  chart.draw(data, options);
-}
-function drawChartBarPlan() {
-  var data = google.visualization.arrayToDataTable([
-  ['Charity', 'Dollar'],
-  ['Plan', 50 ],
-  ['Dogs', 20],
-  ['Oscare', 10],
-  ['Cancer', 50],
-  ['Clowns', 40],
-  ['WWF', 30]
-]);
-
-  // Optional; add a title and set the width and height of the chart
-  var options = {'title':'Distribution Charity up till now (in dollars)', 'width':400, 'height':400};
-
-  // Display the chart inside the <div> element with id="barchart"
-  var chart = new google.visualization.ColumnChart(document.getElementById('barchartplan'));
-  chart.draw(data, options);
-}
-function drawChartPieDog() {
-  var data = google.visualization.arrayToDataTable([
-  ['Charity', 'Percentage'],
-  ['Plan International', 25],
-  ['Helping Dogs', 10],
-  ['Oscare', 5],
-  ['Kankerfonds', 25],
-  ['CliniClowns', 20],
-  ['WWF', 15]
-]);
-
-  // Optional; add a title and set the width and height of the chart
-  var options = {'title':'Distribution Charity up till now (in %)', 'width':400, 'height':400, slices: { 1: {offset: 0.2} } , is3D: true};
-
-  // Display the chart inside the <div> element with id="piechart"
-  var chart = new google.visualization.PieChart(document.getElementById('piechartdog'));
-  chart.draw(data, options);
-}
-function drawChartBarDog() {
-  var data = google.visualization.arrayToDataTable([
-  ['Charity', 'Dollar'],
-  ['Plan', 50 ],
-  ['Dogs', 20],
-  ['Oscare', 10],
-  ['Cancer', 50],
-  ['Clowns', 40],
-  ['WWF', 30]
-]);
-
-  // Optional; add a title and set the width and height of the chart
-  var options = {'title':'Distribution Charity up till now (in dollars)', 'width':400, 'height':400};
-
-  // Display the chart inside the <div> element with id="barchart"
-  var chart = new google.visualization.ColumnChart(document.getElementById('barchartdog'));
-  chart.draw(data, options);
-}
-function drawChartPieOscare() {
-  var data = google.visualization.arrayToDataTable([
-  ['Charity', 'Percentage'],
-  ['Plan International', 25],
-  ['Helping Dogs', 10],
-  ['Oscare', 5],
-  ['Kankerfonds', 25],
-  ['CliniClowns', 20],
-  ['WWF', 15]
-]);
-
-  // Optional; add a title and set the width and height of the chart
-  var options = {'title':'Distribution Charity up till now (in %)', 'width':400, 'height':400, slices: { 2: {offset: 0.2} } , is3D: true};
-
-  // Display the chart inside the <div> element with id="piechart"
-  var chart = new google.visualization.PieChart(document.getElementById('piechartoscare'));
-  chart.draw(data, options);
-}
-function drawChartBarOscare() {
-  var data = google.visualization.arrayToDataTable([
-  ['Charity', 'Dollar'],
-  ['Plan', 50 ],
-  ['Dogs', 20],
-  ['Oscare', 10],
-  ['Cancer', 50],
-  ['Clowns', 40],
-  ['WWF', 30]
-]);
-
-  // Optional; add a title and set the width and height of the chart
-  var options = {'title':'Distribution Charity up till now (in dollars)', 'width':400, 'height':400};
-
-  // Display the chart inside the <div> element with id="barchart"
-  var chart = new google.visualization.ColumnChart(document.getElementById('barchartoscare'));
-  chart.draw(data, options);
-}
-function drawChartPieKanker() {
-  var data = google.visualization.arrayToDataTable([
-  ['Charity', 'Percentage'],
-  ['Plan International', 25],
-  ['Helping Dogs', 10],
-  ['Oscare', 5],
-  ['Kankerfonds', 25],
-  ['CliniClowns', 20],
-  ['WWF', 15]
-]);
-
-  // Optional; add a title and set the width and height of the chart
-  var options = {'title':'Distribution Charity up till now (in %)', 'width':400, 'height':400, slices: { 3: {offset: 0.2} } , is3D: true};
-
-  // Display the chart inside the <div> element with id="piechart"
-  var chart = new google.visualization.PieChart(document.getElementById('piechartkanker'));
-  chart.draw(data, options);
-}
-function drawChartBarKanker() {
-  var data = google.visualization.arrayToDataTable([
-  ['Charity', 'Dollar'],
-  ['Plan', 50 ],
-  ['Dogs', 20],
-  ['Oscare', 10],
-  ['Cancer', 50],
-  ['Clowns', 40],
-  ['WWF', 30]
-]);
-
-  // Optional; add a title and set the width and height of the chart
-  var options = {'title':'Distribution Charity up till now (in dollars)', 'width':400, 'height':400};
-
-  // Display the chart inside the <div> element with id="barchart"
-  var chart = new google.visualization.ColumnChart(document.getElementById('barchartkanker'));
-  chart.draw(data, options);
-}
-function drawChartPieClini() {
-  var data = google.visualization.arrayToDataTable([
-  ['Charity', 'Percentage'],
-  ['Plan International', 25],
-  ['Helping Dogs', 10],
-  ['Oscare', 5],
-  ['Kankerfonds', 25],
-  ['CliniClowns', 20],
-  ['WWF', 15]
-]);
-
-  // Optional; add a title and set the width and height of the chart
-  var options = {'title':'Distribution Charity up till now (in %)', 'width':400, 'height':400, slices: { 4: {offset: 0.2} } , is3D: true};
-
-  // Display the chart inside the <div> element with id="piechart"
-  var chart = new google.visualization.PieChart(document.getElementById('piechartclini'));
-  chart.draw(data, options);
-}
-function drawChartBarClini() {
-  var data = google.visualization.arrayToDataTable([
-  ['Charity', 'Dollar'],
-  ['Plan', 50 ],
-  ['Dogs', 20],
-  ['Oscare', 10],
-  ['Cancer', 50],
-  ['Clowns', 40],
-  ['WWF', 30]
-]);
-
-  // Optional; add a title and set the width and height of the chart
-  var options = {'title':'Distribution Charity up till now (in dollars)', 'width':400, 'height':400};
-
-  // Display the chart inside the <div> element with id="barchart"
-  var chart = new google.visualization.ColumnChart(document.getElementById('barchartclini'));
-  chart.draw(data, options);
-}
-function drawChartPieWWF() {
-  var data = google.visualization.arrayToDataTable([
-  ['Charity', 'Percentage'],
-  ['Plan International', 25],
-  ['Helping Dogs', 10],
-  ['Oscare', 5],
-  ['Kankerfonds', 25],
-  ['CliniClowns', 20],
-  ['WWF', 15]
-]);
-
-  // Optional; add a title and set the width and height of the chart
-  var options = {'title':'Distribution Charity up till now (in %)', 'width':400, 'height':400, slices: { 5: {offset: 0.2} } , is3D: true};
-
-  // Display the chart inside the <div> element with id="piechart"
-  var chart = new google.visualization.PieChart(document.getElementById('piechartwwf'));
-  chart.draw(data, options);
-}
-function drawChartBarWWF() {
-  var data = google.visualization.arrayToDataTable([
-  ['Charity', 'Dollar'],
-  ['Plan', 50 ],
-  ['Dogs', 20],
-  ['Oscare', 10],
-  ['Cancer', 50],
-  ['Clowns', 40],
-  ['WWF', 30]
-]);
-
-  // Optional; add a title and set the width and height of the chart
-  var options = {'title':'Distribution Charity up till now (in dollars)', 'width':400, 'height':400};
-
-  // Display the chart inside the <div> element with id="barchart"
-  var chart = new google.visualization.ColumnChart(document.getElementById('barchartwwf'));
-  chart.draw(data, options);
-}
-
-
-</script>
   </body>
 </html>
