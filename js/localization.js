@@ -1,5 +1,5 @@
 //var test = document.documentElement.lang;
-var test = navigator.language.split("-")[0];
+var test = GET["lang"] || navigator.language.split("-")[0];
 var content = "";
 
 
@@ -45,6 +45,7 @@ function setHTMLLang(){
         langAttrib[i].innerHTML = Lookup(look)
     }
     travelpdf();
+	mainbutton();
 }
 
 function getAllTags(){
@@ -92,5 +93,28 @@ function loadDefaultJSON(callback) {
     xobj.send(null);
 }
 
+function setAllHrefAttrib(){
+	var links = getAllTagsWithAttribute("href");
+	for(var i =0; i < links.length; i++){ 
+		if(links[i].href.includes("?") && !links[i].href.includes("lang")){
+			links[i].href = links[i].href + "&lang=" + test;
+		}else if(!links[i].href.includes("lang")){
+			links[i].href = links[i].href + "?lang=" + test;
+		}
+	}
+}
 
+function checkLangGET(){
+    if(GET["lang"] != null){
+		setAllHrefAttrib();
+	}
+        
+}
+
+function mainbutton(){
+	travel("person");
+}
+
+checkLangGET();
 init();
+

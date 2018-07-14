@@ -8,7 +8,7 @@
     <meta name="description" content="Futurenetbelgium distributors of futurenet">
     <meta name="author" content="Tom Meyers">
 
-    <title>Futurenetbelgium</title>
+    <title>FutureNetBelgium</title>
 
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -21,6 +21,8 @@
 
     <link href="css/style2.css" rel="stylesheet">
     <link href="../dist/css/flags.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
 
 	<!-- icon in tab DB -->
 	<!-- for IE -->
@@ -68,9 +70,9 @@
               Language
             </a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="#" onclick="loadlang('en')">English</a>
-              <a class="dropdown-item" href="#" onclick="loadlang('nl')">Nederlands</a>
-              <a class="dropdown-item" href="#" onclick="loadlang('fr')">Francais</a>
+              <a class="dropdown-item" href="#" onclick="loadlang('en');setAllHrefAttrib()">English</a>
+              <a class="dropdown-item" href="#" onclick="loadlang('nl');setAllHrefAttrib()">Nederlands</a>
+              <a class="dropdown-item" href="#" onclick="loadlang('fr');setAllHrefAttrib()">Francais</a>
             </div>
           </li>
         </ul>
@@ -98,20 +100,104 @@
     </div>
     <header class="masthead">
       <div class="container">
-        <div class="intro-text overlay" style="padding-bottom: 50px;padding-top: 50px;margin-bottom: 25vh;">
+        <div class="intro-text overlay" style="padding-bottom: 50px;padding-top: 50px;top: 50px; margin-top: 100px; margin-bottom: 100px;">
+		 
           <div class="intro-lead-in" trans="title"></div>
-          <div class="intro-heading text-uppercase" trans="subtitle"></div>
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#" trans="button" onclick="MainbtnClick()"></a>
+          <div class="intro-heading text-uppercase" trans="subtitle"></div>  
+		     <div class="example">
+			<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" trans="button" id="person" href="#" onclick="MainbtnClick()"></a>
+		  </div>
+		  <a >
+		  <br>
+			<h4 class="section-subheading text-muted" >Scroll</h4>
+			<div><i class="far fa-arrow-alt-circle-down fa-2x" style="color: gray;"></i> </div>
+			</a>
         </div>
       </div>
     </header>
+	
+	
+<!--	<!-- OverzichtModel 
+	 <section id="overview" class="bg-light">
+      <div class="container">
+        <div class="row">
+		   <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase" style="font-size: 32px;" trans="overzichtmodel"></h2>
+            <p class="section-subheading text-muted" trans="overzichtmodel2"></p>
+          </div>
+		<img src="img/portfolio/2full.jpg" alt="TEST TEST NOG JUISTE FOTO">
+		
+		</div>
+      </div>
+    </section>
+-->
 
     <!-- Services -->
     <section id="services">
       <div class="container">
+	  	<!-- Wat is dat nu eigenlijk voor iets :-) FutureNet??? -->
+	    <div class="row">
+		   <div class="col-lg-12 text-center">
+            <h2 class="section-heading" style="font-size: 32px;" trans="Watisfuturenet"></h2>
+            <p class="section-subheading text-muted" trans="Watisfuturenet2"></p>
+		<!--	<a href="#team" id="refLinkteam" >
+					 <p  style="text-bold; color:black" trans="Watisfuturenet4"></p>
+					</a>
+			 <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" trans="Watisfuturenet3" href="https://www.youtube.com/watch?v=2f9lhdJAP1M" target="_blank"></a>  -->
+			<p></p>
+			<br>
+		</div>
+	  </div>
+	  	  	<!-- Wat is FutureNet Belgium -->
+	    <div class="row">
+		   <div class="col-lg-12 text-center">
+            <h2 class="section-heading" style="font-size: 32px;" trans="Watisfuturenetbelgium1"></h2>
+            <p class="section-subheading text-muted" trans="Watisfuturenetbelgium2"></p>
+			<p></p>
+			<br>
+		</div>
+	  </div>
+	  <!-- Waarom FutureNet België -->
+
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading" style="font-size: 32px;" trans="peopleHeader"></h2>
+                <p class="section-subheading text-muted" trans="peopleInfo"></p>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-heart fa-stack-1x fa-inverse"></i>
+            </span>
+                <h4 class="service-heading" trans="peoplesection1h1"></h4>
+                <p class="text-muted" trans="peoplesection1-1"></p>
+            </div>
+            <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-database fa-stack-1x fa-inverse"></i>
+            </span>
+                <h4 class="service-heading" trans="peoplesection1h2"></h4>
+                <p class="text-muted" trans="peoplesection2-1"></p>
+            </div>
+            <div class="col-md-4">
+				<span class="fa-stack fa-4x">
+					<i class="fa fa-circle fa-stack-2x text-primary"></i>
+					<i class="fas fa-gift fa-stack-1x fa-inverse"></i>
+				</span>
+					<h4 class="service-heading" trans="peoplesection1h3"></h4>
+					<p class="text-muted" trans="peoplesection3-1"></p>
+					<h4 class="service-heading" trans="peoplesection1h4"></h4>
+					<p class="text-muted" trans="peoplesection4-1"></p>
+            </div>
+        </div>
+
+	  <!-- 3 verdienmodelllen -->
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase" trans="verdienste"></h2>
+            <h2 class="section-heading text-uppercase" style="font-size: 32px;" trans="verdienste"></h2>
             <h3 class="section-subheading text-muted" trans="quote"></h3>
           </div>
         </div>
@@ -151,6 +237,7 @@
     </section>
 
     <!-- Portfolio Grid -->
+	<!-- charity -->
     <section class="bg-light" id="portfolio">
       <div class="container">
         <div class="row">
@@ -160,20 +247,23 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4 col-sm-6 portfolio-item">
+		 <div class="column6">
+          <div class="col-md-4 col-sm-6 portfolio-item" >
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid2" src="img/portfolio/fost.png" alt="">
+              <img class="img-fluid2" src="img/portfolio/fost.png" alt="" >
             </a>
             <div class="portfolio-caption">
               <h4 trans="port1"></h4>
               <p class="text-muted" trans="port1-1"></p>
             </div>
           </div>
+		  </div>
+		  <div class="column6">
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
               <div class="portfolio-hover">
@@ -188,6 +278,8 @@
               <p class="text-muted" trans="port2-1"></p>
             </div>
           </div>
+		  </div>
+		  <div class="column6">
           <div class="col-md-4 col-sm-6 portfolio-item"  >
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
               <div class="portfolio-hover">
@@ -202,8 +294,9 @@
               <p class="text-muted" trans="port3-1"></p>
             </div>
           </div>
-		
-        <div class="row">
+		 </div>
+		 <div class="column6">
+
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
               <div class="portfolio-hover">
@@ -218,6 +311,8 @@
               <p class="text-muted" trans="port4-1"></p>
             </div>
           </div>
+		  </div>
+		  <div class="column6">
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
               <div class="portfolio-hover">
@@ -232,6 +327,8 @@
               <p class="text-muted" trans="port5-1"></p>
             </div>
           </div>
+		  </div>
+		  <div class="column6">
           <div class="col-md-4 col-sm-6 portfolio-item"  >
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
               <div class="portfolio-hover">
@@ -246,9 +343,14 @@
               <p class="text-muted" trans="port6-1"></p>
             </div>
           </div>
-        </div>
+		 </div>
       </div>
-	  
+	   <div class="row">
+          <div class="col-lg-12 text-center">
+            <h3 class="section-subheading text-muted" trans="modcharityend"></h3>
+          </div>
+        </div>
+	  </div>
 	  
     </section>
 
@@ -275,6 +377,9 @@
                   </div>
                   <div class="timeline-body">
                     <p class="text-muted" trans="seq2-1-3"></p>
+					<a href="refLinks.html" id="refLink" target="_blank">
+					 <p  style="text-bold; color:black" trans="seq2-1-4"></p>
+					</a>
                   </div>
                 </div>
               </li>
@@ -308,7 +413,7 @@
               </li>
               <li class="timeline-inverted">
                 <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
+						<img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
@@ -322,9 +427,11 @@
               </li>
               <li class="timeline-inverted">
                 <div class="timeline-image">
-                  <h4>Be Part
-                    <br>Of Our
-                    <br>Story!</h4>
+					<a href="https://www.w3schools.com/html/html_links.asp" target="_blank">
+						<h4>Be Part
+						<br>Of Our
+						<br>Story!</h4>
+					</a>
                 </div>
               </li>
             </ul>
@@ -339,26 +446,59 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase" trans="team"></h2>
-            <h3 class="section-subheading text-muted" trans="teamsub"></h3>
+            <h3 class="section-subheading text-muted" style="margin-bottom:15px" trans="teamsub"></h3>
+			</div>
           </div>
-        </div>
+   
         <div class="row">
           <div class="col-sm-6">
             <div class="team-member" >
-              <img class="rollover mx-auto rounded-circle" onmouseover="this.src='img/team/bart1b.jpg'" onmouseout="this.src='img/team/bart1a.jpg';" src="img/team/bart1a.jpg" alt=""  onclick="travelbart()" >
+              <img class="mx-auto rounded-circle" onmouseover="this.src='img/team/bart1b.jpg'" onmouseout="this.src='img/team/bart1a.jpg';" src="img/team/bart1a.jpg" alt=""  onclick="travelbart()" id="bart" >
               <h4 trans="member1"></h4>
               <p class="text-muted" trans="member1position"></p>
+			  	<a onclick="travelbart()" href="#" id='refLinkBart'>
+				<p  trans="member1reflink" ></p>
+			  </a>
             </div>
           </div>
 
           <div class="col-sm-6">
             <div class="team-member">
-              <img class="rollover mx-auto rounded-circle" onmouseover="this.src='img/team/ivan1b.jpg'" onmouseout="this.src='img/team/ivan.png';" src="img/team/ivan.png" alt="" onclick="travelivan()">
+              <img class="mx-auto rounded-circle" onmouseover="this.src='img/team/ivan1b.jpg'" onmouseout="this.src='img/team/ivan.png';" src="img/team/ivan.png" alt="" onclick="travelivan()" id="ivan"	>
               <h4 trans="member2"></h4>
               <p class="text-muted" trans="member2position"></p>
+			  	<a onclick="travelivan()" href="#" id='refLinkIvan'>
+				<p  trans="member2reflink" ></p>
+			  </a>
             </div>
           </div>
-        </div>
+		  </div>
+		  	<div class="row" >
+		<!--		<div class="column3" style="text-align:right;" >
+					<i class="fa fa-arrow-right fa8x" aria-hidden="true" ></i>
+				</div>
+				
+				<div class="column3" >
+					<a href="refLinks.html" id="refLink" target="_blank">
+						<p  trans="seq2-1-5"></p>
+					</a>
+				</div>
+				<div class="column3" style="text-align:left;">
+					<i class="fa fa-arrow-left fa8x" aria-hidden="true" ></i>
+				</div>
+				-->
+				 <div class="col-lg-12 text-center">
+            
+            <h3 class="section-subheading text-muted" > 
+					<a href="refLinks.html" id="refLink2" target="_blank">
+						<p  trans="seq2-1-5"></p>
+					</a>
+			</h3>
+			</div>
+          
+			</div>
+			
+      
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
             <p class="large text-muted" trans="teamend"></p>
@@ -466,21 +606,20 @@
                   <p class="item-intro text-muted" trans="modsub1"></p>
 				  <!-- link op image met rollover bijgevoegd DB-->
 				  <a href="http://www.planinternational.be" target="_blank">
-					<img class="rollover img-fluid d-block mx-auto" onmouseover="this.src='img/portfolio/visit.png'" onmouseout="this.src='img/portfolio/plan.png';" src="img/portfolio/plan.png" alt="">
+					<img class="img-fluid d-block mx-auto" src="img/portfolio/plan.png" alt="" onmouseover="this.src='img/portfolio/visit.png'" onmouseout="this.src='img/portfolio/plan.png';">
 				  </a>
                   <p trans="modtext1"></p>				  					
 				  <!-- Charts bijgevoegd DB-->
 					<div >
 						<div class="row">
-							<div class="chart">
-								<div id="piechartplan" style="width:100%"></div>
+							<div class="chartDB">
+								<div id="piechartplan" ></div>
 							</div>
-							<div class="chart">
-								<div id="barchartplan" style="width:100%"></div>
+							<div class="chartDB">
+								<div id="barchartplan" ></div>
 							</div>
 						</div>
 					</div>
-
                   <button class="btn btn-primary" data-dismiss="modal" type="button" trans="closesub1">
                     <i class="fa fa-times"></i>
                     </button>
@@ -510,16 +649,16 @@
                   <p class="item-intro text-muted" trans="modsub2"></p>
 				  <!-- link op image met rollover bijgevoegd DB-->
 				  <a href="http://helpingdogs.be/newsite2/index.php" target="_blank">
-                  <img class="rollover img-fluid d-block mx-auto" onmouseover="this.src='img/portfolio/visit.png'" onmouseout="this.src='img/portfolio/dog.jpg';" src="img/portfolio/dog.jpg" alt="">
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/dog.jpg" alt="" onmouseover="this.src='img/portfolio/visit.png'" onmouseout="this.src='img/portfolio/dog.jpg';">
 				  </a>
                   <p trans="modtext2"></p>
 				  <!-- Charts bijgevoegd -->
 					<div >
 						<div class="row">
-							<div class="chart">
+							<div class="chartDB">
 								<div id="piechartdog" style="width:100%"></div>
 							</div>
-							<div class="chart">
+							<div class="chartDB">
 								<div id="barchartdog" style="width:100%"></div>
 							</div>
 						</div>
@@ -553,16 +692,16 @@
                   <p class="item-intro text-muted" trans="modsub3"></p>
 				  				  <!-- link op image met rollover bijgevoegd DB-->
 				  <a href="http://www.oscare.be/" target="_blank">
-                  <img class="rollover img-fluid d-block mx-auto" onmouseover="this.src='img/portfolio/visit.png'" onmouseout="this.src='img/portfolio/os.jpg';" src="img/portfolio/os.jpg" alt="">
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/os.jpg" alt="" onmouseover="this.src='img/portfolio/visit.png'" onmouseout="this.src='img/portfolio/os.jpg';">
 				  </a>
                   <p trans="modtext3"></p>
 				  <!-- Charts bijgevoegd -->
 					<div >
 						<div class="row">
-							<div class="chart">
+							<div class="chartDB">
 								<div id="piechartoscare" style="width:100%"></div>
 							</div>
-							<div class="chart">
+							<div class="chartDB">
 								<div id="barchartoscare" style="width:100%"></div>
 							</div>
 						</div>
@@ -596,16 +735,16 @@
                   <p class="item-intro text-muted" trans="modsub4"></p>
 				  <!-- link op image met rollover bijgevoegd DB-->
 				  <a href="http://www.komoptegenkanker.be/" target="_blank">
-                  <img class="rollover img-fluid d-block mx-auto" onmouseover="this.src='img/portfolio/visit.png'" onmouseout="this.src='img/portfolio/kankersmall.jpg';" src="img/portfolio/kankersmall.jpg" alt="">
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/kankersmall.jpg" alt="" onmouseover="this.src='img/portfolio/visit.png'" onmouseout="this.src='img/portfolio/kankersmall.jpg';">
 				  </a>
                   <p trans="modtext4"></p>
 				  <!-- Charts bijgevoegd -->
 					<div >
 						<div class="row">
-							<div class="chart">
+							<div class="chartDB">
 								<div id="piechartkanker" style="width:100%"></div>
 							</div>
-							<div class="chart">
+							<div class="chartDB">
 								<div id="barchartkanker" style="width:100%"></div>
 							</div>
 						</div>
@@ -639,16 +778,16 @@
                   <p class="item-intro text-muted" trans="modsub5"></p>
 				  <!-- link op image met rollover bijgevoegd DB-->
 				  <a href="http://www.cliniclowns.be/" target="_blank">
-                  <img class="rollover  img-fluid d-block mx-auto" onmouseover="this.src='img/portfolio/visit.png'" onmouseout="this.src='img/portfolio/clinismall.png';" src="img/portfolio/clinismall.png" alt="">
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/clinismall.png" alt="" onmouseover="this.src='img/portfolio/visit.png'" onmouseout="this.src='img/portfolio/clinismall.png';">
 				  </a>
                   <p trans="modtext5"></p>
 				  <!-- Charts bijgevoegd -->
 					<div >
 						<div class="row">
-							<div class="chart">
+							<div class="chartDB">
 								<div id="piechartclini" style="width:100%"></div>
 							</div>
-							<div class="chart">
+							<div class="chartDB">
 								<div id="barchartclini" style="width:100%"></div>
 							</div>
 						</div>
@@ -682,16 +821,17 @@
                   <p class="item-intro text-muted" trans="modsub6"></p>
 				  <!-- link op image met rollover bijgevoegd DB-->
 				  <a href="https://wwf.be/" target="_blank">
-                  <img class="rollover img-fluid d-block mx-auto" onmouseover="this.src='img/portfolio/visit.png'" onmouseout="this.src='img/portfolio/wwfsmall.png';" src="img/portfolio/wwfsmall.png" alt="">
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/wwfsmall.png" alt="" onmouseover="this.src='img/portfolio/visit.png'" onmouseout="this.src='img/portfolio/wwfsmall.png';">
 				  </a>
                   <p trans="modtext6"></p>
 				  <!-- Charts bijgevoegd -->
+				  <!-- Charts bijgevoegd DB-->
 					<div >
 						<div class="row">
-							<div class="chart">
+							<div class="chartDB">
 								<div id="piechartwwf" style="width:100%"></div>
 							</div>
-							<div class="chart">
+							<div class="chartDB">
 								<div id="barchartwwf" style="width:100%"></div>
 							</div>
 						</div>
@@ -723,8 +863,16 @@
                   <!-- Project Details Go Here -->
                   <h2 class="text-uppercase" trans="modptitle1"></h2>
                   <p class="item-intro text-muted" trans="modpsub1"></p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/add.png" alt="">
-                  <p trans="modptext1"></p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/2simpelsteps.png" alt="">
+                  <p style="text-align:left" trans="modptext1"></p>
+				  <a href="https://www.w3schools.com" target="_blank">
+				    <img class="img-fluid d-block mx-auto" src="img/portfolio/small.png" alt="" >
+				  </a>
+				  <p style="text-align:left" trans="modptext1-1"></p>
+				  <img class="img-fluid d-block mx-auto" src="img/portfolio/small.png" alt="">
+				  <p style="text-align:left" trans="modptext1-2"></p>
+				  <p><a class="link" href="show.html" trans="modplink">Voor meer informatie, zie Gallery. Klik daarvoor hier</a></p>
+				  
                   <button class="btn btn-primary" data-dismiss="modal" type="button" trans="closepsub1">
                     <i class="fa fa-times"></i>
                   </button>
@@ -752,7 +900,10 @@
                   <h2 class="text-uppercase" trans="modptitle2"></h2>
                   <p class="item-intro text-muted" trans="modpsub2"></p>
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/mat.jpg" alt="">
-                  <p trans="modptext2"></p>
+                  <p style="text-align:left" trans="modptext2"></p>
+				  <p style="text-align:left" trans="modptext2-1"></p>
+				  <img class="img-fluid d-block mx-auto" src="img/portfolio/matrix2.jpg" alt="">
+				  <p style="text-align:left" trans="modptext2-2"></p>
                   <button class="btn btn-primary" data-dismiss="modal" type="button" trans="closepsub2">
                     <i class="fa fa-times"></i>
                   </button>
@@ -779,8 +930,20 @@
                   <!-- Project Details Go Here -->
                   <h2 class="text-uppercase" trans="modptitle3"></h2>
                   <p class="item-intro text-muted" trans="modpsub3"></p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/fut.jpg" alt="">
-                  <p trans="modptext3"></p>
+				  <img class="img-fluid d-block mx-auto" src="img/portfolio/fut.jpg" alt="">
+                  <p trans="modptext3" style="text-align:left"></p>
+				  <p trans="modptext3-1" style="text-align:left"></p>
+				  <p trans="modptext3-1-1" style="text-align:left"></p>
+				  <hr/>
+				  <p class="item-intro text-muted" trans="modpsub3-2" style="text-align:left"></p>
+				  <div class="column">
+					<img class="img-fluid d-block mx-auto" src="img/portfolio/FuturoMining1.jpg" alt="">
+					</div>
+				  <div class="column">
+					<img class="img-fluid d-block mx-auto" src="img/portfolio/FuturoMining2.jpg" alt="">
+				  </div>
+				  <p trans="modptext3-2" style="text-align:left"></p>
+				  <img class="img-fluid d-block mx-auto" src="img/portfolio/FuturoMining3.jpg" alt="">
                   <button class="btn btn-primary" data-dismiss="modal" type="button" trans="closepsub3">
                     <i class="fa fa-times"></i>
                   </button>
@@ -800,12 +963,12 @@
     <script src="js/index.js"></script>
     <script src="js/jquery.js"></script>
     <script src="general.js"></script>
+	<script src="js/get.js"></script>
     <script src="js/localization.js"></script>
-    <script src="js/get.js"></script>
 
 	
 	<!-- chart toegevoegd DB-->
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script src="js/Chart.js"></script>
+	<script src="js/chartDB.js"></script>
   </body>
 </html>

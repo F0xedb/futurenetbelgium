@@ -35,16 +35,41 @@ function travel(id){
     if(allowed.all || contains(allowed.people,GET["ref"])) {
         fill.innerHTML = "Join " + allowed.text[GetIndex(allowed.people,GET["ref"])];
         fill.href = "http://" + GET["ref"];
-    } else{
-        fill.innerHTML = "Join Bart";
-        fill.href = "http://proost.fn.xyz";
+		    removeLinks();
     }
+}
+
+function removeLinks(){
+	var link1 = document.getElementById('refLink');
+	var link2 = document.getElementById('refLink2');
+	var link3 = document.getElementById('refLinkBart');
+	var link4 = document.getElementById('refLinkIvan');
+	link1.style.display = "none";
+	link2.style.display = "none";
+	link3.style.display = "none";
+	link4.style.display = "none";
+	var ivan = document.getElementById("ivan");
+	var bart = document.getElementById("bart");
+	ivan.onmouseover="";
+	bart.onmouseover="";
+	ivan.onmouseout="";
+	bart.onmouseout="";
+	ivan.onclick="";
+	bart.onclick="";
 }
 
 
 function travelHome(){
     var trav = document.getElementById("change");
-    trav.href = "index.html?ref=" + GET["ref"];
+    trav.href = "index.html?ref=" + GET["ref"] + "&lang="+test;
 }
 
-travel("person");
+function travelHomePeople(){
+    var trav = document.getElementById("change");
+    trav.href = "people.html?ref=" + GET["ref"]+ "&lang="+test;
+}
+
+if(GET["ref"]!=null){
+	removeLinks();
+}
+

@@ -5,17 +5,17 @@ function MainbtnClick(){
         if (Math.random() > 0.5) {
             travelbart();
         } else {
-            travelivan()
+            travelivan();
         }
     }
 }
 
 function travelbart(){
-    window.location.href='people.html?ref=proost.futurenet.xyz';
+    window.location.href='index.html?ref=proost.fn.xyz'+ "&lang="+test;
 }
 
 function travelivan() {
-    window.location.href='people.html?ref=ivanow.fn.xyz';
+    window.location.href='index.html?ref=ivanow.fn.xyz'+ "&lang="+test;
 }
 
 function travelLoc(location){
