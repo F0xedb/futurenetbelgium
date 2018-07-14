@@ -11,7 +11,7 @@ function MainbtnClick(){
 }
 
 function travelbart(){
-    window.location.href='people.html?ref=proost.futurenet.xyz';
+    window.location.href='people.html?ref=proost.fn.xyz';
 }
 
 function travelivan() {

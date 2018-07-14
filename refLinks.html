@@ -29,6 +29,9 @@
 	<link rel="shortcut icon" type="image/png" href="img/portfolio/favicon.ico" >
 	<link rel="icon" type="image/png" href="img/portfolio/favicon.ico" >
 
+	<!-- avatar in tabel DB -->
+	<link href="css/search.css" rel="stylesheet">
+	
   </head>
 
   <body id="page-top">
@@ -79,7 +82,9 @@
         <div class="intro-text overlay" style="padding-bottom: 50px;padding-top: 50px;margin-bottom: 25vh;">
           <div class="intro-lead-in" trans="title"></div>
           <div class="intro-heading text-uppercase" trans="subtitle"></div>
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#refLinks" trans="buttonRefLinks"></a>
+		  <div class="example">
+			<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger " href="#refLinks" trans="buttonRefLinks"></a>
+		  </div>
         </div>
       </div>
     </header>
@@ -90,21 +95,86 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase" trans="reftitle"></h2>
-            <h3 class="section-subheading text-muted" trans="refsub"></h3>
+            <h3 class="section-subheading text-muted" style="margin-bottom:15px" trans="refsub"></h3>
+			<h3  trans="refend"></h3>
           </div>
         </div>
-		<!-- RefLinks Bart hier aanpassen als erbij komen -->
-			<!-- Bart Proost -->
-			<p><a href="https://proost.fn.xyz/" target="_blank">Gratis account aanmaken onder "Bart Proost" </a></p>
-			<p><a href="http://futurenetbelgium.be/index.html?ref=proost.fn.xyz" target="_blank">Bart Proost</a></p>
-			<hr size="6">
-			<!-- Dominique Burssens -->
-			<p><a href="https://proost.fn.xyz/" target="_blank">Gratis account aanmaken onder "Dominique Burssens" </a></p>
-			<p><a href="http://futurenetbelgium.be/index.html?ref=proost.fn.xyz" target="_blank">Dominique Burssens</a></p>
-			<hr size="">
-			<!-- volgende persoon hier noteren -->
-			
-		<!-- RefLinks Bart : gewoon een lijn kopieren en aanpassen met de juiste naam en url -->
+	
+			<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for usernames..">
+
+			<table id="myTable" class="container">
+				<tr class="header">
+					<th id="foto" style="width:20%;">Avatar</th>
+					<th style="width:30%;">Name</th>
+					<th style="width:40%;">RefLink</th>
+					<th style="width:10%;">Charity</th>
+				</tr>
+				<!-- RefLinks Bart hier aanpassen als erbij komen -->
+				<!-- Hier kan je kopieren voor het juiste goede doel -->
+				<!--
+				<td><img src="img/team/reflinkpic/helping_dogs.png" title="Helping Dogs" alt="Not Found" style="width:50px" ></td>
+				<td><img src="img/team/reflinkpic/clini.png" title="Clini Clowns" alt="Not Found" style="width:50px" ></td>
+				<td><img src="img/team/reflinkpic/fost.png" title="Plan International" alt="Not Found" style="width:50px" ></td>
+				<td><img src="img/team/reflinkpic/kanker.png" title="Kom op tegen kanker" alt="Not Found" style="width:50px" ></td>
+				<td><img src="img/team/reflinkpic/WWF.jpg" title="WWF" alt="Not Found" style="width:50px" ></td>
+				<td><img src="img/team/reflinkpic/oscare_logo.png" title="Brandwondenfonds" alt="Not Found" style="width:50px" ></td>
+				<td><img src="img/team/reflinkpic/questionmark.jpg" title="Not yet chosen" alt="Not Found" style="width:50px" ></td>
+				-->
+				<!-- Bart Proost -->
+				<tr>
+					<td><img src="img/team/reflinkpic/bart.jpg" title="Level 1" alt="Not Found" style="width:90px" ></td>
+					<td trans="member1"></td>
+					<td><a href="http://futurenetbelgium.be/index.html?ref=proost.fn.xyz" target="_blank">proost.fn.xyz</a></td>
+					<td><img src="img/team/reflinkpic/helping_dogs.png" title="Helping Dogs" alt="Not Found" style="width:50px" ></td>
+				</tr>
+				<!-- Ivan Lenaerts -->
+				<tr>
+					<td><img src="img/team/reflinkpic/ivan.png" title="Level 1" alt="Not Found" style="width:90px"></td>
+					<td trans="member2"></td>
+					<td><a href="http://futurenetbelgium.be/index.html?ref=ivan.fn.xyz" target="_blank">ivanow.fn.xyz</a></td>
+					<td><img src="img/team/reflinkpic/fost.png" title="Plan International" alt="Not Found" style="width:50px" ></td>
+				</tr>
+				<!-- Luke Lenaerts-->
+				<tr>
+					<td><img src="img/team/reflinkpic/nopictureavailable.png" title="Level 2" alt="Not Found" style="width:90px"></td>
+					<td>Lucky Luke</td>
+					<td><a href="#" target="_blank">luke.fn.xyz</a></td>
+					<td><img src="img/team/reflinkpic/questionmark.jpg" title="Not yet chosen" alt="Not Found" style="width:50px" ></td>
+				</tr>
+				<!-- Dominique Burssens -->
+				<tr>
+					<td><img src="img/team/reflinkpic/nopictureavailable.png" title="Level 2" alt="Not Found" style="width:90px"></td>
+					<td>Poes</td>
+					<td><a href="http://futurenetbelgium.be/index.html?ref=poes.fn.xyz" target="_blank">poes.fn.xyz</a></td>
+					<td><img src="img/team/reflinkpic/oscare_logo.png" title="Brandwondenfonds" alt="Not Found" style="width:50px" ></td>
+				</tr>
+				<!-- Tom Meyers -->
+				<tr>
+					<td><img src="img/team/reflinkpic/BART_dans_met_mij.jpg" title="Level 2" alt="Not Found" style="width:90px"></td>
+					<td>not available</td>
+					<td><a href="http://futurenetbelgium.be/index.html?ref=tm.fn.xyz" target="_blank">tm.fn.xyz</a></td>
+					<td><img src="img/team/reflinkpic/questionmark.jpg" title="Not yet chosen" alt="Not Found" style="width:50px" ></td>
+				</tr>	
+				<!-- Tim Oprins -->
+				<tr>
+					<td><img src="img/team/reflinkpic/nopictureavailable.png" title="Level 2" alt="Not Found" style="width:90px"></td>
+					<td>Tim Oprins</td>
+					<td><a href=">http://futurenetbelgium.be/index.html?ref=tim.fn.xyz" target="_blank">tim.fn.xyz</a></td>
+					<td><img src="img/team/reflinkpic/questionmark.jpg" title="Not yet chosen" alt="Not Found" style="width:50px" ></td>
+				</tr>	
+				<!-- Dries Stappers -->
+				<tr>
+					<td><img src="img/team/reflinkpic/nopictureavailable.png" title="Level 2" alt="Not Found" style="width:90px"></td>
+					<td>Dries Stappers</td>
+					<td><a href=">http://futurenetbelgium.be/index.html?ref=dries.fn.xyz" target="_blank">dries.fn.xyz</a></td>
+					<td><img src="img/team/reflinkpic/questionmark.jpg" title="Not yet chosen" alt="Not Found" style="width:50px" ></td>
+				</tr>				
+				<!-- RefLinks Bart : gewoon 5 lijnen kopieren  mét TR en END TR en aanpassen met de juiste image,naam en url -->
+				<!-- volgende persoon hier noteren -->
+				
+				<!-- tot hier -->
+			</table>
+	  
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
             <p class="large text-muted" trans="refend"></p>
@@ -199,7 +269,7 @@
         });
 
     </script>
-
+    <script src="js/search.js"></script>
 
   </body>
 

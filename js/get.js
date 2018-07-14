@@ -47,4 +47,9 @@ function travelHome(){
     trav.href = "index.html?ref=" + GET["ref"];
 }
 
+function travelHomePeople(){
+    var trav = document.getElementById("change");
+    trav.href = "people.html?ref=" + GET["ref"];
+}
+
 travel("person");

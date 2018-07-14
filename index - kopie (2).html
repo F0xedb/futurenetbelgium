@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 
-<head>
+  <head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Futurenetbelgium distributors of futurenet">
     <meta name="author" content="Tom Meyers">
 
-    <title>Futurenetbelgium</title>
+    <title>FutureNetBelgium</title>
 
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -20,140 +20,121 @@
     <link rel="stylesheet" href="css/style.css">
 
     <link href="css/style2.css" rel="stylesheet">
+    <link href="../dist/css/flags.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
-</head>
 
-<body id="page-top" onload="travelHome()">
+	<!-- icon in tab DB -->
+	<!-- for IE -->
+	<link rel="shortcut icon" type="image/png" href="img/portfolio/favicon.ico" >
+	<link rel="icon" type="image/png" href="img/portfolio/favicon.ico" >
+	
+  </head>
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" style="background-color: #0a3c78!important;">
-    <!-- Brand -->
-    <a class="navbar-brand" href="#">
+  <body id="page-top" onload="init()">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" style="background-color: #0a3c78!important;">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">
         <img src="img/futurenetlogo.svg" alt="futurenet" style="width:100px;">
-    </a>
+      </a>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
-    </button>
-    <button class="btn btn-outline-info my-2 my-sm-0" type="submit" trans="mute" id="mute" onclick="mute()"></button>
+      </button>
+      <button class="btn btn-outline-info my-2 my-sm-0" type="submit" trans="mute" id="mute" onclick="mute()"></button>
 
-    <!-- Links -->
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#" trans="home"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about" trans="about"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" trans="contact"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="show.html" trans="gallerylink"></a>
+          </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" trans="home" id="change" onclick="travelHomePeople()"></a>
+                <a class="nav-link" href="#" trans="pdf" id="pdf" target="_blank"></a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="show.html" trans="gallerylink"></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" trans="pdf" id="pdf" onclick="travelpdf()"></a>
-            </li>
-            <!-- Dropdown -->
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                    Language
-                </a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#" onclick="loadlang('en')">English</a>
-                    <a class="dropdown-item" href="#" onclick="loadlang('nl')">Nederlands</a>
-                    <a class="dropdown-item" href="#" onclick="loadlang('fr')">Francais</a>
-                </div>
-            </li>
-        </ul>
-    </div>
-</nav>
 
-<!-- Header -->
-<div class="vid">
-    <video autoplay loop muted id="myVideo">
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Language
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#" onclick="loadlang('en')">English</a>
+              <a class="dropdown-item" href="#" onclick="loadlang('nl')">Nederlands</a>
+              <a class="dropdown-item" href="#" onclick="loadlang('fr')">Francais</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="vid">
+      <video autoplay loop muted id="myVideo">
         <source src="video/main.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
-    </video>
-    <script>
-        setTimeout(function() {
-            var isChrome = !!window.chrome && !!window.chrome.webstore;
-            mute();
-            if (!isChrome) {
-                mute();
-            }
-        },100);
-    </script>
-</div>
-<header class="masthead">
-    <div class="container">
+      </video>
+      <script>
+          setTimeout(function() {
+              var isChrome = !!window.chrome && !!window.chrome.webstore;
+              if (!isChrome) {
+                  mute();
+                  mute();
+              }else{
+                  mute();
+                  setTimeout(function(){showMute("unmute");bIsMuted=true;},500);
+              }
+          },100);
+      </script>
+    </div>
+    <header class="masthead">
+      <div class="container">
         <div class="intro-text overlay" style="padding-bottom: 50px;padding-top: 50px;margin-bottom: 25vh;">
-            <div class="intro-lead-in" trans="title"></div>
-            <div class="intro-heading text-uppercase" trans="people"></div>
-                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#" id="person"></a>
-            </div>
+		 
+          <div class="intro-lead-in" trans="title"></div>
+          <div class="intro-heading text-uppercase" trans="subtitle"></div>  
+		     <div class="example">
+			<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" trans="button" href="#" onclick="MainbtnClick()"></a>
+		  </div>
+		  <a >
+		  <br>
+			<h4 class="section-subheading text-muted" >Scroll</h4>
+			<div><i class="far fa-arrow-alt-circle-down fa-2x" style="color: gray;"></i> </div>
+			</a>
         </div>
-</header>
+      </div>
+    </header>
+	
+	
+<!--	<!-- OverzichtModel 
+	 <section id="overview" class="bg-light">
+      <div class="container">
+        <div class="row">
+		   <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase" style="font-size: 32px;" trans="overzichtmodel"></h2>
+            <p class="section-subheading text-muted" trans="overzichtmodel2"></p>
+          </div>
+		<img src="img/portfolio/2full.jpg" alt="TEST TEST NOG JUISTE FOTO">
+		
+		</div>
+      </div>
+    </section>
+-->
 
-<!-- DUBBELE CODE VAN INDEX maar ZONDER REF LINKS :-( i know -->
     <!-- Services -->
     <section id="services">
       <div class="container">
-	  	<!-- Wat is dat nu eigenlijk voor iets :-) FutureNet??? -->
-	    <div class="row">
-		   <div class="col-lg-12 text-center">
-            <h2 class="section-heading" style="font-size: 32px;" trans="Watisfuturenet"></h2>
-            <p class="section-subheading text-muted" trans="Watisfuturenet2"></p>
-			<!-- <a href="#team" id="refLinkteam" >
-					 <p  style="text-bold; color:black">Team</p>
-					</a>
-			 <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" trans="Watisfuturenet3" href="https://www.youtube.com/watch?v=2f9lhdJAP1M" target="_blank"></a>  -->
-			<p></p>
-			<br>
-		</div>
-	  </div>
-	  	  	<!-- Wat is FutureNet Belgium -->
-	    <div class="row">
-		   <div class="col-lg-12 text-center">
-            <h2 class="section-heading" style="font-size: 32px;" trans="Watisfuturenetbelgium1"></h2>
-            <p class="section-subheading text-muted" trans="Watisfuturenetbelgium2"></p>
-			<p></p>
-			<br>
-		</div>
-	  </div>
-	  <!-- Waarom FutureNet België -->
-
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading" style="font-size: 32px;" trans="peopleHeader"></h2>
-                <p class="section-subheading text-muted" trans="peopleInfo"></p>
-            </div>
-        </div>
-        <div class="row text-center">
-            <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-heart fa-stack-1x fa-inverse"></i>
-            </span>
-                <h4 class="service-heading" trans="peoplesection1h1"></h4>
-                <p class="text-muted" trans="peoplesection1-1"></p>
-            </div>
-            <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-database fa-stack-1x fa-inverse"></i>
-            </span>
-                <h4 class="service-heading" trans="peoplesection1h2"></h4>
-                <p class="text-muted" trans="peoplesection2-1"></p>
-            </div>
-            <div class="col-md-4">
-				<span class="fa-stack fa-4x">
-					<i class="fa fa-circle fa-stack-2x text-primary"></i>
-					<i class="fas fa-gift fa-stack-1x fa-inverse"></i>
-				</span>
-					<h4 class="service-heading" trans="peoplesection1h3"></h4>
-					<p class="text-muted" trans="peoplesection3-1"></p>
-					<h4 class="service-heading" trans="peoplesection1h4"></h4>
-					<p class="text-muted" trans="peoplesection4-1"></p>
-            </div>
-        </div>
-
-	  <!-- 3 verdienmodelllen -->
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase" style="font-size: 32px;" trans="verdienste"></h2>
@@ -195,7 +176,6 @@
       </div>
     </section>
 
-	
     <!-- Portfolio Grid -->
 	<!-- charity -->
     <section class="bg-light" id="portfolio">
@@ -207,23 +187,20 @@
           </div>
         </div>
         <div class="row">
-		 <div class="column6">
-          <div class="col-md-4 col-sm-6 portfolio-item" >
+          <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid2" src="img/portfolio/fost.png" alt="" >
+              <img class="img-fluid2" src="img/portfolio/fost.png" alt="">
             </a>
             <div class="portfolio-caption">
               <h4 trans="port1"></h4>
               <p class="text-muted" trans="port1-1"></p>
             </div>
           </div>
-		  </div>
-		  <div class="column6">
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
               <div class="portfolio-hover">
@@ -238,8 +215,6 @@
               <p class="text-muted" trans="port2-1"></p>
             </div>
           </div>
-		  </div>
-		  <div class="column6">
           <div class="col-md-4 col-sm-6 portfolio-item"  >
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
               <div class="portfolio-hover">
@@ -254,9 +229,8 @@
               <p class="text-muted" trans="port3-1"></p>
             </div>
           </div>
-		 </div>
-		 <div class="column6">
-
+		
+        <div class="row">
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
               <div class="portfolio-hover">
@@ -271,8 +245,6 @@
               <p class="text-muted" trans="port4-1"></p>
             </div>
           </div>
-		  </div>
-		  <div class="column6">
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
               <div class="portfolio-hover">
@@ -287,8 +259,6 @@
               <p class="text-muted" trans="port5-1"></p>
             </div>
           </div>
-		  </div>
-		  <div class="column6">
           <div class="col-md-4 col-sm-6 portfolio-item"  >
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
               <div class="portfolio-hover">
@@ -303,14 +273,9 @@
               <p class="text-muted" trans="port6-1"></p>
             </div>
           </div>
-		 </div>
-      </div>
-	   <div class="row">
-          <div class="col-lg-12 text-center">
-            <h3 class="section-subheading text-muted" trans="modcharityend"></h3>
-          </div>
         </div>
-	  </div>
+      </div>
+	  
 	  
     </section>
 
@@ -337,7 +302,9 @@
                   </div>
                   <div class="timeline-body">
                     <p class="text-muted" trans="seq2-1-3"></p>
-					
+					<a href="refLinks.html" id="refLink" target="_blank">
+					 <p  style="text-bold; color:black" trans="seq2-1-4"></p>
+					</a>
                   </div>
                 </div>
               </li>
@@ -385,11 +352,11 @@
               </li>
               <li class="timeline-inverted">
                 <div class="timeline-image">
-					
+					<a href="https://www.w3schools.com/html/html_links.asp" target="_blank">
 						<h4>Be Part
 						<br>Of Our
 						<br>Story!</h4>
-					
+					</a>
                 </div>
               </li>
             </ul>
@@ -405,33 +372,39 @@
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase" trans="team"></h2>
             <h3 class="section-subheading text-muted" style="margin-bottom:15px" trans="teamsub"></h3>
+			<div class="row" >
+				<div class="column3" style="text-align:right;" >
+					<i class="fa fa-arrow-right fa8x" aria-hidden="true" ></i>
+				</div>
+				<div class="column3" >
+					<a href="refLinks.html" id="refLink" target="_blank">
+						<p  trans="seq2-1-5"></p>
+					</a>
+				</div>
+				<div class="column3" style="text-align:left;">
+					<i class="fa fa-arrow-left fa8x" aria-hidden="true" ></i>
+				</div>
+			</div>
 			</div>
           </div>
    
         <div class="row">
           <div class="col-sm-6">
             <div class="team-member" >
-              <img class="mx-auto rounded-circle"  src="img/team/bart1a.jpg" alt=""   >
+              <img class="mx-auto rounded-circle" onmouseover="this.src='img/team/bart1b.jpg'" onmouseout="this.src='img/team/bart1a.jpg';" src="img/team/bart1a.jpg" alt=""  onclick="travelbart()" >
               <h4 trans="member1"></h4>
               <p class="text-muted" trans="member1position"></p>
-			  	
-				
-			  </a>
             </div>
           </div>
 
           <div class="col-sm-6">
             <div class="team-member">
-              <img class="mx-auto rounded-circle"  src="img/team/ivan.png" alt="" >
+              <img class="mx-auto rounded-circle" onmouseover="this.src='img/team/ivan1b.jpg'" onmouseout="this.src='img/team/ivan.png';" src="img/team/ivan.png" alt="" onclick="travelivan()">
               <h4 trans="member2"></h4>
               <p class="text-muted" trans="member2position"></p>
-			  	
-				
-			  </a>
             </div>
           </div>
-		  </div>
-      
+        </div>
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
             <p class="large text-muted" trans="teamend"></p>
@@ -440,7 +413,9 @@
       </div>
     </section>
 
-	
+
+
+
     <!-- Contact -->
     <section id="contact">
       <div class="container">
@@ -487,36 +462,36 @@
     </section>
 
 
-<!-- Footer -->
-<footer class="flex-containercentervert">
-    <div class="flex-containerhor upperpadding">
+    <!-- Footer -->
+    <footer class="flex-containercentervert">
+      <div class="flex-containerhor upperpadding">
         <ul class="list-inline social-buttons">
-            <li class="list-inline-item">
-                <a href="https://twitter.com/FuturenetB">
-                    <i class="fa fa-twitter"></i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a href="https://www.facebook.com/groups/367332583794122/">
-                    <i class="fa fa-facebook"></i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a href="#">
-                    <i class="fa fa-linkedin"></i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a href="#">
-                    <i class="fa fa-wifi"></i>
-                </a>
-            </li>
+          <li class="list-inline-item">
+            <a href="https://twitter.com/FuturenetB">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/groups/367332583794122/">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">
+              <i class="fa fa-wifi"></i>
+            </a>
+          </li>
         </ul>
-    </div>
-    <div class="center">
+      </div>
+      <div class="center">
         <p class="center" trans="footer"></p>
-    </div>
-</footer>
+      </div>
+    </footer>
 
     <!-- Portfolio Modals -->
 	<!-- Modal 1 -->
@@ -544,10 +519,10 @@
 					<div >
 						<div class="row">
 							<div class="chartDB">
-								<div id="piechartplan" ></div>
+								<div id="piechartplan" style="width:100%"></div>
 							</div>
 							<div class="chartDB">
-								<div id="barchartplan" ></div>
+								<div id="barchartplan" style="width:100%"></div>
 							</div>
 						</div>
 					</div>
@@ -831,10 +806,7 @@
                   <h2 class="text-uppercase" trans="modptitle2"></h2>
                   <p class="item-intro text-muted" trans="modpsub2"></p>
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/mat.jpg" alt="">
-                  <p style="text-align:left" trans="modptext2"></p>
-				  <p style="text-align:left" trans="modptext2-1"></p>
-				  <img class="img-fluid d-block mx-auto" src="img/portfolio/matrix2.jpg" alt="">
-				  <p style="text-align:left" trans="modptext2-2"></p>
+                  <p trans="modptext2"></p>
                   <button class="btn btn-primary" data-dismiss="modal" type="button" trans="closepsub2">
                     <i class="fa fa-times"></i>
                   </button>
@@ -955,24 +927,4 @@
 	<script src="js/chartDB.js"></script>
 
   </body>
-
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-<script src="js/jqBootstrapValidation.js"></script>
-<script src="js/contact_me.js"></script>
-
-<script src="js/agency.js"></script>
-
-<script src="js/index.js"></script>
-<script src="js/jquery.js"></script>
-<script src="general.js"></script>
-<script src="js/localization.js"></script>
-<script src="js/get.js"></script>
-
-
-</body>
-
 </html>
