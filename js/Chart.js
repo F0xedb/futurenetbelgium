@@ -204,7 +204,6 @@ function drawChartPieWWF() {
         ['CliniClowns', 20],
         ['WWF', 15]
     ]);
-
     // Optional; add a title and set the width and height of the chart
     var options = {'title':'Distribution Charity up till now (in %)', 'width':400, 'height':400, slices: { 5: {offset: 0.2} } , is3D: true};
 

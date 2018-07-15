@@ -115,18 +115,15 @@ function setAllHrefAttrib(){
 		}
 	}
 }
-
 function checkLangGET(){
     if(GET["lang"] != null){
 		setAllHrefAttrib();
 	}
         
 }
-
 function mainbutton(){
 	travel("person");
 }
-
 checkLangGET();
 init();
 

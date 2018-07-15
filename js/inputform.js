@@ -26,7 +26,6 @@ function setClass(el,remove,add){
     }
     el.className = string;
 }
-
 function setTravelbtn(bAllowed){
     var btn = document.getElementById("sendMessageButton");
     if (bAllowed){

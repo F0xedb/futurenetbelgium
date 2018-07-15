@@ -26,7 +26,6 @@ for (var i = 0; i < button.length; i++) {
             posMouseX = e.x - rect.left;
             posMouseY = e.y - rect.top;
         }
-
         const baseCSS =  `position: absolute;
 											width: ${btnWidth * 2}px;
 											height: ${btnWidth * 2}px;
