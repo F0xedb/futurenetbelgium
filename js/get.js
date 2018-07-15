@@ -35,7 +35,7 @@ function travel(id){
     if(allowed.all || contains(allowed.people,GET["ref"])) {
         fill.innerHTML = "Join " + allowed.text[GetIndex(allowed.people,GET["ref"])];
         fill.href = "http://" + GET["ref"];
-		removeLinks();
+		    removeLinks();
     }
 }
 
