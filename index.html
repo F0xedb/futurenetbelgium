@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Futurenetbelgium distributors of futurenet">
+    <meta name="description" content="FutureNetbelgium distributors of futureNet">
     <meta name="author" content="Tom Meyers">
 
     <title>FutureNetBelgium</title>
@@ -23,7 +23,7 @@
     <link href="../dist/css/flags.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
-
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 	<!-- icon in tab DB -->
 	<!-- for IE -->
 	<link rel="shortcut icon" type="image/png" href="img/portfolio/favicon.ico" >
@@ -180,7 +180,7 @@
             <div class="col-md-4">
             <span class="fa-stack fa-4x">
               <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-database fa-stack-1x fa-inverse"></i>
+              <i class="fa fa-link fa-stack-1x fa-inverse"></i>
             </span>
                 <h4 class="service-heading" trans="peoplesection1h2"></h4>
                 <p class="text-muted" trans="peoplesection2-1"></p>
@@ -191,8 +191,8 @@
 					<i class="fas fa-gift fa-stack-1x fa-inverse"></i>
 				</span>
 					<h4 class="service-heading" trans="peoplesection1h3"></h4>
+				<!--	<h4 class="service-heading" trans="peoplesection1h4"></h4>  -->
 					<p class="text-muted" trans="peoplesection3-1"></p>
-					<h4 class="service-heading" trans="peoplesection1h4"></h4>
 					<p class="text-muted" trans="peoplesection4-1"></p>
             </div>
         </div>
@@ -379,9 +379,10 @@
                   </div>
                   <div class="timeline-body">
                     <p class="text-muted" trans="seq2-1-3"></p>
-					<a href="refLinks.html" id="refLink" target="_blank">
+				<!--	<a href="refLinks.html" id="refLink" target="_blank">
 					 <p  style="text-bold; color:black" trans="seq2-1-4"></p>
 					</a>
+					-->
                   </div>
                 </div>
               </li>
@@ -865,13 +866,12 @@
                   <!-- Project Details Go Here -->
                   <h2 class="text-uppercase" trans="modptitle1"></h2>
                   <p class="item-intro text-muted" trans="modpsub1"></p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/2simpelsteps.png" alt="">
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/add.png" alt="">
                   <p style="text-align:left" trans="modptext1"></p>
-				  <a href="https://www.w3schools.com" target="_blank">
-				    <img class="img-fluid d-block mx-auto" src="img/portfolio/small.png" alt="" >
-				  </a>
+				  <img class="img-fluid d-block mx-auto" src="img/portfolio/vbAdPack.png" alt="" >
+				  <img class="img-fluid d-block mx-auto" src="img/portfolio/vbAdPack2.png" alt="" >
 				  <p style="text-align:left" trans="modptext1-1"></p>
-				  <img class="img-fluid d-block mx-auto" src="img/portfolio/small.png" alt="">
+				  <img class="img-fluid d-block mx-auto" src="img/portfolio/vbAdPackBus.png" alt="">
 				  <p style="text-align:left" trans="modptext1-2"></p>
 				  <p><a class="link" href="show.html" trans="modplink">Voor meer informatie, zie Gallery. Klik daarvoor hier</a></p>
 				  
@@ -957,10 +957,19 @@
       </div>
     </div>
 
+
+
+
+
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <script src="js/agency.js"></script>
 
     <script src="js/index.js"></script>
     <script src="js/jquery.js"></script>
@@ -968,9 +977,53 @@
 	<script src="js/get.js"></script>
     <script src="js/localization.js"></script>
 
+    <script src="../dist/js/jquery.flagstrap.js"></script>
+
+    <script>
+	
+        $('#basic').flagStrap();
+
+        $('#origin').flagStrap({
+            placeholder: {
+                value: "",
+                text: "Country of origin"
+            }
+        });
+
+        $('#options').flagStrap({
+            countries: {
+                "AU": "Australia",
+                "GB": "United Kingdom",
+                "US": "United States"
+            },
+            buttonSize: "btn-sm",
+            buttonType: "btn-info",
+            labelMargin: "10px",
+            scrollable: false,
+            scrollableHeight: "350px"
+        });
+
+        $('#advanced').flagStrap({
+            buttonSize: "btn-lg",
+            buttonType: "btn-primary",
+            labelMargin: "20px",
+            scrollable: false,
+            scrollableHeight: "350px",
+            onSelect: function (value, element) {
+                alert(value);
+                console.log(element);
+            }
+        });
+
+    </script>
+
+
+	<!-- foto's rollover toegevoegd DB-->
+	<script src="js/rollover.js"></script>
 	
 	<!-- chart toegevoegd DB-->
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 	<script src="js/chartDB.js"></script>
+
   </body>
 </html>

@@ -17,12 +17,12 @@ google.charts.setOnLoadCallback(drawChartBarWWF);
 function drawChartPiePlan() {
     var data = google.visualization.arrayToDataTable([
         ['Charity', 'Percentage'],
-        ['Plan International', 25],
-        ['Helping Dogs', 10],
-        ['Oscare', 5],
-        ['Kankerfonds', 25],
-        ['CliniClowns', 20],
-        ['WWF', 15]
+        ['Plan International', 8],
+        ['Helping Dogs', 17],
+        ['Oscare', 25],
+        ['Kankerfonds', 8],
+        ['CliniClowns', 17],
+        ['WWF', 25]
     ]);
 
     // Optional; add a title and set the width and height of the chart
@@ -34,17 +34,17 @@ function drawChartPiePlan() {
 }
 function drawChartBarPlan() {
     var data = google.visualization.arrayToDataTable([
-        ['Charity', 'Dollar'],
-        ['Plan', 50 ],
-        ['Dogs', 20],
-        ['Oscare', 10],
-        ['Cancer', 50],
-        ['Clowns', 40],
-        ['WWF', 30]
+        ['Charity', 'Euro'],
+        ['Plan', 1 ],
+        ['Dogs', 2],
+        ['Oscare', 3],
+        ['Cancer', 1],
+        ['Clowns', 2],
+        ['WWF', 3]
     ]);
 
     // Optional; add a title and set the width and height of the chart
-    var options = {'title':'Distribution Charity up till now (in dollars)', 'width':400, 'height':400};
+    var options = {'title':'Distribution Charity up till now (in Euro)', 'width':400, 'height':400};
 
     // Display the chart inside the <div> element with id="barchart"
     var chart = new google.visualization.ColumnChart(document.getElementById('barchartplan'));
@@ -53,12 +53,12 @@ function drawChartBarPlan() {
 function drawChartPieDog() {
     var data = google.visualization.arrayToDataTable([
         ['Charity', 'Percentage'],
-        ['Plan International', 25],
-        ['Helping Dogs', 10],
-        ['Oscare', 5],
-        ['Kankerfonds', 25],
-        ['CliniClowns', 20],
-        ['WWF', 15]
+        ['Plan International', 8],
+        ['Helping Dogs', 17],
+        ['Oscare', 25],
+        ['Kankerfonds', 8],
+        ['CliniClowns', 17],
+        ['WWF', 25]
     ]);
 
     // Optional; add a title and set the width and height of the chart
@@ -70,31 +70,31 @@ function drawChartPieDog() {
 }
 function drawChartBarDog() {
     var data = google.visualization.arrayToDataTable([
-        ['Charity', 'Dollar'],
-        ['Plan', 50 ],
-        ['Dogs', 20],
-        ['Oscare', 10],
-        ['Cancer', 50],
-        ['Clowns', 40],
-        ['WWF', 30]
+        ['Charity', 'Euro'],
+        ['Plan', 1 ],
+        ['Dogs', 2],
+        ['Oscare', 3],
+        ['Cancer', 1],
+        ['Clowns', 2],
+        ['WWF', 3]
     ]);
 
     // Optional; add a title and set the width and height of the chart
-    var options = {'title':'Distribution Charity up till now (in dollars)', 'width':400, 'height':400};
+    var options = {'title':'Distribution Charity up till now (in Euro)', 'width':400, 'height':400};
 
     // Display the chart inside the <div> element with id="barchart"
     var chart = new google.visualization.ColumnChart(document.getElementById('barchartdog'));
     chart.draw(data, options);
 }
 function drawChartPieOscare() {
-    var data = google.visualization.arrayToDataTable([
+     var data = google.visualization.arrayToDataTable([
         ['Charity', 'Percentage'],
-        ['Plan International', 25],
-        ['Helping Dogs', 10],
-        ['Oscare', 5],
-        ['Kankerfonds', 25],
-        ['CliniClowns', 20],
-        ['WWF', 15]
+        ['Plan International', 8],
+        ['Helping Dogs', 17],
+        ['Oscare', 25],
+        ['Kankerfonds', 8],
+        ['CliniClowns', 17],
+        ['WWF', 25]
     ]);
 
     // Optional; add a title and set the width and height of the chart
@@ -105,32 +105,32 @@ function drawChartPieOscare() {
     chart.draw(data, options);
 }
 function drawChartBarOscare() {
-    var data = google.visualization.arrayToDataTable([
-        ['Charity', 'Dollar'],
-        ['Plan', 50 ],
-        ['Dogs', 20],
-        ['Oscare', 10],
-        ['Cancer', 50],
-        ['Clowns', 40],
-        ['WWF', 30]
+   var data = google.visualization.arrayToDataTable([
+        ['Charity', 'Euro'],
+        ['Plan', 1 ],
+        ['Dogs', 2],
+        ['Oscare', 3],
+        ['Cancer', 1],
+        ['Clowns', 2],
+        ['WWF', 3]
     ]);
 
     // Optional; add a title and set the width and height of the chart
-    var options = {'title':'Distribution Charity up till now (in dollars)', 'width':400, 'height':400};
+    var options = {'title':'Distribution Charity up till now (in Euro)', 'width':400, 'height':400};
 
     // Display the chart inside the <div> element with id="barchart"
     var chart = new google.visualization.ColumnChart(document.getElementById('barchartoscare'));
     chart.draw(data, options);
 }
 function drawChartPieKanker() {
-    var data = google.visualization.arrayToDataTable([
+     var data = google.visualization.arrayToDataTable([
         ['Charity', 'Percentage'],
-        ['Plan International', 25],
-        ['Helping Dogs', 10],
-        ['Oscare', 5],
-        ['Kankerfonds', 25],
-        ['CliniClowns', 20],
-        ['WWF', 15]
+        ['Plan International', 8],
+        ['Helping Dogs', 17],
+        ['Oscare', 25],
+        ['Kankerfonds', 8],
+        ['CliniClowns', 17],
+        ['WWF', 25]
     ]);
 
     // Optional; add a title and set the width and height of the chart
@@ -142,17 +142,17 @@ function drawChartPieKanker() {
 }
 function drawChartBarKanker() {
     var data = google.visualization.arrayToDataTable([
-        ['Charity', 'Dollar'],
-        ['Plan', 50 ],
-        ['Dogs', 20],
-        ['Oscare', 10],
-        ['Cancer', 50],
-        ['Clowns', 40],
-        ['WWF', 30]
+        ['Charity', 'Euro'],
+        ['Plan', 1 ],
+        ['Dogs', 2],
+        ['Oscare', 3],
+        ['Cancer', 1],
+        ['Clowns', 2],
+        ['WWF', 3]
     ]);
 
     // Optional; add a title and set the width and height of the chart
-    var options = {'title':'Distribution Charity up till now (in dollars)', 'width':400, 'height':400};
+    var options = {'title':'Distribution Charity up till now (in Euro)', 'width':400, 'height':400};
 
     // Display the chart inside the <div> element with id="barchart"
     var chart = new google.visualization.ColumnChart(document.getElementById('barchartkanker'));
@@ -161,12 +161,12 @@ function drawChartBarKanker() {
 function drawChartPieClini() {
     var data = google.visualization.arrayToDataTable([
         ['Charity', 'Percentage'],
-        ['Plan International', 25],
-        ['Helping Dogs', 10],
-        ['Oscare', 5],
-        ['Kankerfonds', 25],
-        ['CliniClowns', 20],
-        ['WWF', 15]
+        ['Plan International', 8],
+        ['Helping Dogs', 17],
+        ['Oscare', 25],
+        ['Kankerfonds', 8],
+        ['CliniClowns', 17],
+        ['WWF', 25]
     ]);
 
     // Optional; add a title and set the width and height of the chart
@@ -177,18 +177,18 @@ function drawChartPieClini() {
     chart.draw(data, options);
 }
 function drawChartBarClini() {
-    var data = google.visualization.arrayToDataTable([
-        ['Charity', 'Dollar'],
-        ['Plan', 50 ],
-        ['Dogs', 20],
-        ['Oscare', 10],
-        ['Cancer', 50],
-        ['Clowns', 40],
-        ['WWF', 30]
+   var data = google.visualization.arrayToDataTable([
+        ['Charity', 'Euro'],
+        ['Plan', 1 ],
+        ['Dogs', 2],
+        ['Oscare', 3],
+        ['Cancer', 1],
+        ['Clowns', 2],
+        ['WWF', 3]
     ]);
 
     // Optional; add a title and set the width and height of the chart
-    var options = {'title':'Distribution Charity up till now (in dollars)', 'width':400, 'height':400};
+    var options = {'title':'Distribution Charity up till now (in Euro)', 'width':400, 'height':400};
 
     // Display the chart inside the <div> element with id="barchart"
     var chart = new google.visualization.ColumnChart(document.getElementById('barchartclini'));
@@ -197,12 +197,12 @@ function drawChartBarClini() {
 function drawChartPieWWF() {
     var data = google.visualization.arrayToDataTable([
         ['Charity', 'Percentage'],
-        ['Plan International', 25],
-        ['Helping Dogs', 10],
-        ['Oscare', 5],
-        ['Kankerfonds', 25],
-        ['CliniClowns', 20],
-        ['WWF', 15]
+        ['Plan International', 8],
+        ['Helping Dogs', 17],
+        ['Oscare', 25],
+        ['Kankerfonds', 8],
+        ['CliniClowns', 17],
+        ['WWF', 25]
     ]);
 
     // Optional; add a title and set the width and height of the chart
@@ -214,17 +214,17 @@ function drawChartPieWWF() {
 }
 function drawChartBarWWF() {
     var data = google.visualization.arrayToDataTable([
-        ['Charity', 'Dollar'],
-        ['Plan', 50 ],
-        ['Dogs', 20],
-        ['Oscare', 10],
-        ['Cancer', 50],
-        ['Clowns', 40],
-        ['WWF', 30]
+        ['Charity', 'Euro'],
+        ['Plan', 1 ],
+        ['Dogs', 2],
+        ['Oscare', 3],
+        ['Cancer', 1],
+        ['Clowns', 2],
+        ['WWF', 3]
     ]);
 
     // Optional; add a title and set the width and height of the chart
-    var options = {'title':'Distribution Charity up till now (in dollars)', 'width':400, 'height':400};
+    var options = {'title':'Distribution Charity up till now (in Euro)', 'width':400, 'height':400};
 
     // Display the chart inside the <div> element with id="barchart"
     var chart = new google.visualization.ColumnChart(document.getElementById('barchartwwf'));
