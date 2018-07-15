@@ -247,9 +247,8 @@ header.masthead .intro-text .intro-heading {
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
   position: absolute;
-  width: 420%;
+  width: 100%;
   height: 100%;
-  margin-left: 12.5%;
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
   transition: all ease 0.5s;
@@ -716,78 +715,6 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 .img-fluid2 {
-  max-width: 400%;
+  max-width: 100%;
   height: auto;
-  margin-left: 12.5%;
 }
-
-/* toegevoegd voor 2 images naast mekaar */
-/* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
-  float: left;
-  width: 50%;
-  padding: 5px;
-}
-/* toegevoegd om de charity naast mekaar te krijgen */
-.column3 {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
-.column6 {
-  float: left;
-  width: 16.66%;
-  padding: 8px;
-}
-
-@media only screen and (max-width: 600px) {
-    .column6 {
-        width: 5%;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .column6 {
-        -ms-flex: 50%;
-        flex: 50%;
-        max-width: 50%;
-    }
-}
-@media (max-width: 500px) {
-  .column6 {
-    text-align: center;
-  }
-
-  .column6 img {
-    margin: auto;
-    float: none;
-    display: block;
-  }
-}
-
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/* toegevoegd voor gsm */
-<style>
-div.example {
-  background-color: lightgrey;
-  padding: 20px;
-}
-
-@media screen and (min-width: 601px) {
-  div.example {
-    font-size: 80px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  div.example {
-    font-size: 20px;
-  }
-}
-</style>

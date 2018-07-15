@@ -49,3 +49,41 @@ function travelpdf(){
     var pdf = document.getElementById("pdf");
     pdf.href= "adpro_"+ test+".pdf";
 }
+
+function travelto(string){
+        window.location.href=string;
+}
+function currentloc() {
+    return window.location.pathname;
+}
+
+function pdfclick(){
+    window.location.href="adpro_"+ test+".pdf";
+}
+
+var pdf = document.getElementById("pdf");
+pdf.onclick=pdfclick;
+
+
+function fillDateForm(){
+    var date = document.getElementById("date");
+    var time = new Date();
+    var year = time.getFullYear();
+    var month = "01";
+    var day = "01";
+
+    if(time.getMonth()+1 < 10) {
+        month = "0" + (time.getMonth()+1);
+    }else{
+        month = time.getMonth()+1;
+    }
+
+    if(time.getDate() < 10) {
+        day = "0"+time.getDate();
+    }else{
+        day = time.getDate();
+    }
+
+    date.value = year + "-" + month + "-" + day;
+}
+

@@ -9,6 +9,7 @@
   "about": "about",
   "contact": "contact",
   "gallerylink": "gallery",
+  "form": "form",
   "button": "Versterk ons team <br> en promoot je Ref-Link",
   "buttonRefLinks": "Klik hier om een <br>overzicht te krijgen <br>van de Promoted Ref-links",
   "heading": "FutureNet België",
@@ -138,5 +139,22 @@
   "gallery3":  "Hoe een succesvol business opstarten",
   "gallery4":  "Bouw een business met FutureNet",
   "gallery5":  "World Convention 2018",
-  "gallery6":  "Adpacks"
+  "gallery6":  "Adpacks",
+  "loginfrom":"Inschrijvingsformulier FutureNet België",
+  "loginfromsub":"FutureNet België is een team binnen FutureNEt, opgebouwd door members. Wij zijn geen apart bedrijf, wij werken voor en volgens de regels van futureNet.club. Wij staan niet in voor eventuele verliezen en of problemen. Door u aan te melden via vermelde ref-links sluit u zich aan bij FutreNet.club en dient u ook de regels die voor u van toepassing zijn te volgen.",
+  "freeAcc":"Ik heb een gratis account aangemaakt onder FutureNet Belgium en geef bij deze toestemming om op de website mijn Ref-Link te promoten met volgende gegevens:",
+  "reflink":"Ref-Link",
+  "refname":"Naam",
+  "refPhoto":"Profielfoto",
+  "freeAccsubtext":"Op deze manier kan je je eigen webpagina promoten om meer mensen te kunnen bereiken om je team op te bouwen. Deze link kan je doorsturen naar vrienden of delen op social media.",
+  "charity":"* FutureNet België schenkt een deel van haar winst aan een goed doel, ik hoef hiervoor zelf niets af te staan. Het deel waar ik verantwoordelijk voor ben, zie ik graag gaan naar:",
+  "charity1":" <input class='form-check-input' type='radio' name='charity' required='required' required value='PlanInterNational' id='charity1'>Plan International</input>",
+  "charity2":"<input class='form-check-input' type='radio' name='charity' required='required' required value='HelpingDogs' id='charity2'>Helping Dogs</input>",
+  "charity3":"<input class='form-check-input' type='radio' name='charity' required='required' required value='Oscare' id='charity3'>Oscare</input>",
+  "charity4":"<input class='form-check-input' type='radio' name='charity' required='required' required value='KomOpTegenKanker' id='charity4'>Kom Op Tegen Kanker</input>",
+  "charity5":"<input class='form-check-input' type='radio' name='charity' required='required' required value='Cliniclowns' id='charity5'>Cliniclowns</input>",
+  "charity6":"<input class='form-check-input' type='radio' name='charity' required='required' required value='WWF' id='charity6'>WWF</input>",
+  "bonus": "<input class='form-check-input' type='checkbox' name='bonus' id='bonus' value='true' trans='refPhoto'>Ik wens mijn welkomstbonus te ontvangen via een code en wil ook kans maken op de extra prijzen. Ik voldoe hiervoor aan de vermelde voorwaarden. (level 1, 2, 3 of 4)</input>",
+  "formEnd": "Uw gegevens worden enkel gebruikt voor registratie binnen FutureNEt België. In geen geval zullen wij uw gegevens doorgeven of verkopen aan derden. U hebt steeds de mogelijkheid uw gegevens in te zien, te wijzigen of te verwijderen."
+
 }
