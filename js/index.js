@@ -9,7 +9,6 @@ function MainbtnClick(){
         }
     }
 }
-
 function MainbtnClick2(){
     var el = document.getElementById("story");
     if(GET["ref"] != null && (allowed.all || contains(allowed.people,GET["ref"]))){

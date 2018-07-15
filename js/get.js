@@ -38,7 +38,6 @@ function travel(id){
         removeLinks();
     }
 }
-
 function removeLinks(){
 	var link1 = document.getElementById('refLink');
 	var link2 = document.getElementById('refLink2');

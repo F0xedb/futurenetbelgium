@@ -6,7 +6,8 @@ body{
     background-size: cover;
 }
 p{
-    text-shadow: 1px 1px 1px black;
+    /*text-shadow: 1px 1px 1px black;*/
+    color: #444 !important;
 }
 
 footer{
