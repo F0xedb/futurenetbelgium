@@ -147,6 +147,7 @@
   "refname":"Name",
   "refPhoto":"Profile photo",
   "freeAccsubtext":"This way you can promote your own webpage to reach more people and you will be able to build a team. This link can be send to friends via social media.",
+  "birthdate":"birthdate",
   "charity":"* FutureNet Belgium donates a part of its profit to a charity of its choice. I don't have to pay for anything. My donation will go to: ",
   "charity1":" <input class='form-check-input' type='radio' name='charity' required='required' required value='PlanInterNational' id='charity1'>Plan International</input>",
   "charity2":"<input class='form-check-input' type='radio' name='charity' required='required' required value='HelpingDogs' id='charity2'>Helping Dogs</input>",
