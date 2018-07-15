@@ -64,6 +64,18 @@ function getAllTagsWithAttribute(attrib){
     return filtered;
 }
 
+function getAllTagsWithValueAttribute(atribname,val){
+    var filtered = new Array();
+    var tags = getAllTags();
+    for (var i =0; i< tags.length; i++){
+        var sol = tags[i].getAttribute(atribname);
+        if(sol !== null && sol.includes(val)){
+            filtered.push(tags[i]);
+        }
+    }
+    return filtered;
+}
+
 
 function loadJSON(callback) {
 
