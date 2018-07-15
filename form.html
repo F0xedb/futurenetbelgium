@@ -87,30 +87,56 @@
             <form id="contactForm" name="sentMessage" novalidate="novalidate" method="post" action="mail/login.php">
               <div class="row">
                 <div class="form-group col-md-6">
-                  <input class="form-control" id="prename" name="prename" type="text" placeholder="firstName *" required>
+                  <input class="form-control is-invalid" id="prename" name="prename" type="text" placeholder="firstName *" onkeypress="input(this)" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <div class="invalid-feedback">
+                    Please choose a username.
+                  </div>
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group col-md-6">
-                    <input class="form-control" id="name" name="name" type="text" placeholder="Name *" required="true" data-validation-required-message="Please enter your name.">
+                    <input class="form-control is-invalid" id="name" name="name" type="text" placeholder="Name *" onkeypress="input(this)" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <div class="invalid-feedback">
+                    Please choose a username.
+                  </div>
                     <p class="help-block text-danger"></p>
                 </div>
               </div>
               <div class="form-group">
-                  <input class="form-control" id="reflink" name="prename" type="text" placeholder="Ref-Link *" required="required" required data-validation-required-message="XXXX">
+                  <input class="form-control is-invalid" id="reflink" name="reflink" type="text" placeholder="Ref-Link *" onkeypress="input(this)" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Please choose a username.
+                </div>
                   <p class="help-block text-danger"></p>
               </div>
               <div class="form-group">
-                <input class="form-control" id="sponsor" name="sponsor" type="text" placeholder="sponsor *" required="required" required data-validation-required-message="sponsor">
+                <input class="form-control" id="sponsor" name="sponsor" type="text"  placeholder="sponsor *">
                 <p class="help-block text-danger"></p>
               </div>
               <div class="form-group">
-                <input class="form-control" id="e-mail" name="email" type="text" placeholder="e-mail *" required="required" required data-validation-required-message="email">
+                <input class="form-control is-invalid" id="e-mail" name="email" type="text" onkeypress="input(this)" onkeydown="input(this)"  placeholder="e-mail *" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Please choose a username.
+                </div>
                 <p class="help-block text-danger"></p>
               </div>
 
-              <div class="form-group">
-                <label for="example-date-input" class="col-2 col-form-label">Date</label>
-                  <input class="form-control" type="date" id="date" value="2011-08-19" id="example-date-input">
+              <div class="form-group input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroupPrepend3" trans="birthdate">@</span>
+                </div>
+                  <input class="form-control" type="date" id="date" name="date" value="2011-08-19" id="example-date-input">
               </div>
 
               <fieldset class="form-group" style="color: #6c757d">
@@ -192,6 +218,9 @@
     </section>
 
 
+
+
+
     <!-- Footer -->
     <footer class="flex-containercentervert">
       <div class="flex-containerhor upperpadding">
@@ -235,6 +264,7 @@
     <script src="general.js"></script>
 	<script src="js/get.js"></script>
     <script src="js/localization.js"></script>
+    <script src="js/inputform.js"></script>
 
   </body>
 </html>
