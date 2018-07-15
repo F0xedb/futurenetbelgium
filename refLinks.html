@@ -40,7 +40,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" style="background-color: #0a3c78!important;">
       <!-- Brand -->
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="#" onclick="travelto('index.html?lang='+test + ref())">
         <img src="img/futurenetlogo.svg" alt="futurenet" style="width:100px;">
       </a>
 
@@ -53,7 +53,7 @@
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="index.html" trans="home"></a>
+            <a class="nav-link" href="index.html" data-toggle="collapse" data-target=".navbar-collapse.show" trans="home" onclick="travelto('index.html?lang='+test + ref())"></a>
           </li>
         </ul>
       </div>
@@ -61,7 +61,7 @@
 
     <!-- Header -->
     <div class="vid">
-      <video autoplay loop muted id="myVideo" controls muted>
+      <video autoplay loop muted id="myVideo">
         <source src="video/main.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
       </video>
@@ -92,7 +92,7 @@
 
    <!-- RefLinks -->
     <section class="bg-light" id="refLinks">
-      <div class="container">
+      <div class="container2 container">
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase" trans="reftitle"></h2>

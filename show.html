@@ -32,7 +32,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" style="background-color: #0a3c78!important;">
       <!-- Brand -->
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="#" onclick="travelto('index.html?lang='+test + ref())">
         <img src="img/futurenetlogo.svg" alt="futurenet" style="width:100px;">
       </a>
 
@@ -45,20 +45,20 @@
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="index.html" trans="home"></a>
+            <a class="nav-link" href="index.html" trans="home" data-toggle="collapse" data-target=".navbar-collapse.show" onclick="travelto('index.html?lang='+test + ref())"></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" trans="pdf" id="pdf" onclick="travelpdf()"></a>
+            <a class="nav-link" href="#" trans="pdf" id="pdf" data-toggle="collapse" data-target=".navbar-collapse.show" onclick="travelpdf()"></a>
           </li>
           <!-- Dropdown -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="collapse" data-toggle="dropdown">
               Language
             </a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="#" onclick="loadlang('en')">English</a>
-              <a class="dropdown-item" href="#" onclick="loadlang('nl')">Nederlands</a>
-              <a class="dropdown-item" href="#" onclick="loadlang('fr')">Francais</a>
+              <a class="dropdown-item" href="#" data-toggle="collapse" onclick="loadlang('en')">English</a>
+              <a class="dropdown-item" href="#" data-toggle="collapse" onclick="loadlang('nl')">Nederlands</a>
+              <a class="dropdown-item" href="#" data-toggle="collapse" onclick="loadlang('fr')">Francais</a>
             </div>
           </li>
         </ul>
