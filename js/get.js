@@ -34,8 +34,8 @@ function travel(id){
     var fill= document.getElementById(id);
     if(allowed.all || contains(allowed.people,GET["ref"])) {
         fill.innerHTML = "Join " + allowed.text[GetIndex(allowed.people,GET["ref"])];
-        fill.href = "http://" + GET["ref"];
-		    removeLinks();
+        //fill.href = "http://" + GET["ref"];
+        removeLinks();
     }
 }
 

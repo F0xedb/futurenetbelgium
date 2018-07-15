@@ -25,15 +25,18 @@ function MainbtnClick2(){
 
 function travelbart(){
     window.location.href='index.html?ref=proost.fn.xyz'+ "&lang="+test;
+
 }
 
 function travelivan() {
-    window.location.href='index.html?ref=ivanow.fn.xyz'+ "&lang="+test;
+   window.location.href='index.html?ref=ivanow.fn.xyz'+ "&lang="+test;
+
 }
 
 
 function travelLoc(location){
-    window.location.href='https://' + location;
+   var url ='https://' + location;
+   window.open(url,'_blank');
 }
 
 function loadlang(lang){
