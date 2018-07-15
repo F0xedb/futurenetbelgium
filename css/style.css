@@ -241,6 +241,12 @@ footer{
   display: table;
 }
 
+@media (max-width: 600px) {
+    .example a{
+        font-size: 1em;
+    }
+}
+
 
 
 @-moz-keyframes spin { 100% { -moz-transform: rotateX(360deg); } }

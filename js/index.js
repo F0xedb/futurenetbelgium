@@ -10,6 +10,19 @@ function MainbtnClick(){
     }
 }
 
+function MainbtnClick2(){
+    var el = document.getElementById("story");
+    if(GET["ref"] != null && (allowed.all || contains(allowed.people,GET["ref"]))){
+        el.href = "https://" + GET["ref"];
+    }else {
+        if (Math.random() > 0.5) {
+            el.href = 'index.html?ref=proost.fn.xyz'+ "&lang="+test;
+        } else {
+            el.href = 'index.html?ref=ivanow.fn.xyz'+ "&lang="+test;
+        }
+    }
+}
+
 function travelbart(){
     window.location.href='index.html?ref=proost.fn.xyz'+ "&lang="+test;
 }
@@ -17,6 +30,7 @@ function travelbart(){
 function travelivan() {
     window.location.href='index.html?ref=ivanow.fn.xyz'+ "&lang="+test;
 }
+
 
 function travelLoc(location){
     window.location.href='https://' + location;
@@ -85,5 +99,12 @@ function fillDateForm(){
     }
 
     date.value = year + "-" + month + "-" + day;
+}
+
+function ref(){
+    if(GET["ref"]!=null){
+        return "&ref="+GET["ref"];
+    }
+    return "";
 }
 

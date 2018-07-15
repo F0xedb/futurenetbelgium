@@ -8,7 +8,7 @@
 
 
 /* Style the container with a rounded border, grey background and some padding and margin AVATAR */
-.container {
+.container2 {
     border: 2px solid #ccc;
     background-color: #eee;
     border-radius: 5px;
@@ -17,25 +17,25 @@
 }
 
 /* Clear floats after containers */
-.container::after {
+.container2::after {
     content: "";
     clear: both;
     display: table;
 }
 
 /* Float images inside the container to the left. Add a right margin, and style the image as a circle */
-.container img {
+.container2 img {
     float: left;
     margin-right: 20px;
     border-radius: 50%;
 }
 /* Add media queries for responsiveness. This will center both the text and the image inside the container */
 @media (max-width: 500px) {
-  .container {
+  .container2 {
     text-align: center;
   }
 
-  .container img {
+  .container2 img {
     margin: auto;
     float: none;
     display: block;

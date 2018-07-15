@@ -36,7 +36,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" style="background-color: #0a3c78!important;">
       <!-- Brand -->
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="#" onclick="travelto('index.html?lang='+test + ref())">
         <img src="img/futurenetlogo.svg" alt="futurenet" style="width:100px;">
       </a>
 
@@ -58,10 +58,10 @@
             <a class="nav-link" href="#contact" data-toggle="collapse" data-target=".navbar-collapse.show" trans="contact" onclick="travelto(currentloc()+'#contact')"></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="show.html" data-toggle="collapse" data-target=".navbar-collapse.show" trans="gallerylink" onclick="travelto('show.html?lang='+test)"></a>
+            <a class="nav-link" href="show.html" data-toggle="collapse" data-target=".navbar-collapse.show" trans="gallerylink" onclick="travelto('show.html?lang='+test + ref())"></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="form.html" data-toggle="collapse" data-target=".navbar-collapse.show" trans="form" onclick="travelto('form.html?lang='+test)"></a>
+            <a class="nav-link" href="form.html" data-toggle="collapse" data-target=".navbar-collapse.show" trans="form" onclick="travelto('form.html?lang='+test + ref())"></a>
           </li>
             <li class="nav-item">
                 <a class="nav-link" href="#" trans="pdf" data-toggle="collapse" data-target=".navbar-collapse.show" id="pdf" target="_blank"></a>
@@ -429,7 +429,7 @@
               </li>
               <li class="timeline-inverted">
                 <div class="timeline-image">
-					<a href="https://www.w3schools.com/html/html_links.asp" target="_blank">
+					<a href="#" onclick="MainbtnClick2()" id="story" target="_blank">
 						<h4>Be Part
 						<br>Of Our
 						<br>Story!</h4>
