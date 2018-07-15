@@ -178,6 +178,11 @@ footer{
     transition: 1s;
 }
 
+.fa-link:hover {
+    color: black;
+    transition: 1s;
+}
+
 #database a:hover {
 	font-size:18px;
 	opacity:2;
