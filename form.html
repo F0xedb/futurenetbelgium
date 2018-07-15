@@ -49,13 +49,13 @@
           <li class="nav-item">
             <a class="nav-link" href="#" data-toggle="collapse" data-target=".navbar-collapse.show" trans="home" onclick="travelto('index.html?lang='+test  + ref())"></a>
           </li>
-          <li class="nav-item">
+  <!--        <li class="nav-item">
             <a class="nav-link" href="show.html" data-toggle="collapse" data-target=".navbar-collapse.show" trans="gallerylink" onclick="travelto('show.html?lang='+test + ref())"></a>
           </li>
             <li class="nav-item">
                 <a class="nav-link" href="#" trans="pdf" data-toggle="collapse" data-target=".navbar-collapse.show" id="pdf" target="_blank"></a>
             </li>
-
+-->
           <!-- Dropdown -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
@@ -85,7 +85,7 @@
             <form id="contactForm" name="sentMessage" novalidate="novalidate" method="post" action="mail/login.php">
               <div class="row">
                 <div class="form-group col-md-6">
-                  <input class="form-control" id="prename" name="prename" type="text" placeholder="firstName *" required>
+                  <input class="form-control" id="prename" name="prename" type="text" placeholder="FirstName *" required>
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group col-md-6">
@@ -94,15 +94,15 @@
                 </div>
               </div>
               <div class="form-group">
-                  <input class="form-control" id="reflink" name="prename" type="text" placeholder="Ref-Link *" required="required" required data-validation-required-message="XXXX">
+                  <input class="form-control" id="reflink" name="prename" type="text" placeholder="Ref-Link * (username.fn.xyz)" required="required" required data-validation-required-message="XXXX">
                   <p class="help-block text-danger"></p>
               </div>
               <div class="form-group">
-                <input class="form-control" id="sponsor" name="sponsor" type="text" placeholder="sponsor *" required="required" required data-validation-required-message="sponsor">
+                <input class="form-control" id="sponsor" name="sponsor" type="text" placeholder="Sponsor username*" required="required" required data-validation-required-message="sponsor">
                 <p class="help-block text-danger"></p>
               </div>
               <div class="form-group">
-                <input class="form-control" id="e-mail" name="email" type="text" placeholder="e-mail *" required="required" required data-validation-required-message="email">
+                <input class="form-control" id="e-mail" name="email" type="text" placeholder="E-mail *" required="required" required data-validation-required-message="email">
                 <p class="help-block text-danger"></p>
               </div>
 
