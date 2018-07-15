@@ -1,0 +1,31 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/general.min.js" />
+        <item url="file://$PROJECT_DIR$/js/Chart.min.js" />
+        <item url="file://$PROJECT_DIR$/js/agency.min.js" />
+        <item url="file://$PROJECT_DIR$/js/chartDB.min.js" />
+        <item url="file://$PROJECT_DIR$/js/contact_me.min.js" />
+        <item url="file://$PROJECT_DIR$/js/get.min.js" />
+        <item url="file://$PROJECT_DIR$/js/index.min.js" />
+        <item url="file://$PROJECT_DIR$/js/inputform.min.js" />
+        <item url="file://$PROJECT_DIR$/js/jqBootstrapValidation.min.js" />
+        <item url="file://$PROJECT_DIR$/js/search.min.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/general.min.js" />
+      <root url="file://$PROJECT_DIR$/js/Chart.min.js" />
+      <root url="file://$PROJECT_DIR$/js/agency.min.js" />
+      <root url="file://$PROJECT_DIR$/js/chartDB.min.js" />
+      <root url="file://$PROJECT_DIR$/js/contact_me.min.js" />
+      <root url="file://$PROJECT_DIR$/js/get.min.js" />
+      <root url="file://$PROJECT_DIR$/js/index.min.js" />
+      <root url="file://$PROJECT_DIR$/js/inputform.min.js" />
+      <root url="file://$PROJECT_DIR$/js/jqBootstrapValidation.min.js" />
+      <root url="file://$PROJECT_DIR$/js/search.min.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>
