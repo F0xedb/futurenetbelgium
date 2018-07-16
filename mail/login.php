@@ -3,6 +3,7 @@
 if(empty($_POST['prename'])      ||
    empty($_POST['name'])     ||
    empty($_POST['reflink'])     ||
+   empty($_POST['sponsor'])     ||
    empty($_POST['email']))
    {
    echo "No arguments Provided!";
@@ -20,13 +21,7 @@ $charity = strip_tags(htmlspecialchars($_POST['charity']));
 $bonus = strip_tags(htmlspecialchars($_POST['bonus']));
 $phone = strip_tags(htmlspecialchars($_POST['phone']));
 
-if (isset($_POST['sponsor'])) {
-   $sponsor = strip_tags(htmlspecialchars($_POST['sponsor']));
-}else{
-   $sponsor="Unknown"
-}
-
-if (isset($_POST['sponsor'])) {
+if (isset($_POST['date'])) {
    $date = strip_tags(htmlspecialchars($_POST['date']));
 }else{
    $date="Unknown"
