@@ -38,12 +38,10 @@ function travel(id){
         removeLinks();
     }
 }
-function removeLinks(){
-	var link1 = document.getElementById('refLink');
+function removeLinks(){	
 	var link2 = document.getElementById('refLink2');
 	var link3 = document.getElementById('refLinkBart');
 	var link4 = document.getElementById('refLinkIvan');
-	link1.style.display = "none";
 	link2.style.display = "none";
 	link3.style.display = "none";
 	link4.style.display = "none";
