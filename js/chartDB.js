@@ -34,12 +34,12 @@ function drawChartPiePlan() {
 function drawChartBarPlan() {
     var data = google.visualization.arrayToDataTable([
         ['Charity', 'Euro'],
-        ['Plan', 1 ],
-        ['Dogs', 2],
-        ['Oscare', 3],
-        ['Cancer', 1],
-        ['Clowns', 2],
-        ['WWF', 3]
+        ['Plan', 10],
+        ['Dogs', 20],
+        ['Oscare', 30],
+        ['Cancer', 10],
+        ['Clowns', 20],
+        ['WWF', 30]
     ]);
 
     // Optional; add a title and set the width and height of the chart
@@ -70,12 +70,12 @@ function drawChartPieDog() {
 function drawChartBarDog() {
     var data = google.visualization.arrayToDataTable([
         ['Charity', 'Euro'],
-        ['Plan', 1 ],
-        ['Dogs', 2],
-        ['Oscare', 3],
-        ['Cancer', 1],
-        ['Clowns', 2],
-        ['WWF', 3]
+        ['Plan', 10],
+        ['Dogs', 20],
+        ['Oscare', 30],
+        ['Cancer', 10],
+        ['Clowns', 20],
+        ['WWF', 30]
     ]);
 
     // Optional; add a title and set the width and height of the chart
@@ -104,14 +104,14 @@ function drawChartPieOscare() {
     chart.draw(data, options);
 }
 function drawChartBarOscare() {
-   var data = google.visualization.arrayToDataTable([
+     var data = google.visualization.arrayToDataTable([
         ['Charity', 'Euro'],
-        ['Plan', 1 ],
-        ['Dogs', 2],
-        ['Oscare', 3],
-        ['Cancer', 1],
-        ['Clowns', 2],
-        ['WWF', 3]
+        ['Plan', 10],
+        ['Dogs', 20],
+        ['Oscare', 30],
+        ['Cancer', 10],
+        ['Clowns', 20],
+        ['WWF', 30]
     ]);
 
     // Optional; add a title and set the width and height of the chart
@@ -142,12 +142,12 @@ function drawChartPieKanker() {
 function drawChartBarKanker() {
     var data = google.visualization.arrayToDataTable([
         ['Charity', 'Euro'],
-        ['Plan', 1 ],
-        ['Dogs', 2],
-        ['Oscare', 3],
-        ['Cancer', 1],
-        ['Clowns', 2],
-        ['WWF', 3]
+        ['Plan', 10],
+        ['Dogs', 20],
+        ['Oscare', 30],
+        ['Cancer', 10],
+        ['Clowns', 20],
+        ['WWF', 30]
     ]);
 
     // Optional; add a title and set the width and height of the chart
@@ -176,14 +176,14 @@ function drawChartPieClini() {
     chart.draw(data, options);
 }
 function drawChartBarClini() {
-   var data = google.visualization.arrayToDataTable([
+    var data = google.visualization.arrayToDataTable([
         ['Charity', 'Euro'],
-        ['Plan', 1 ],
-        ['Dogs', 2],
-        ['Oscare', 3],
-        ['Cancer', 1],
-        ['Clowns', 2],
-        ['WWF', 3]
+        ['Plan', 10],
+        ['Dogs', 20],
+        ['Oscare', 30],
+        ['Cancer', 10],
+        ['Clowns', 20],
+        ['WWF', 30]
     ]);
 
     // Optional; add a title and set the width and height of the chart
@@ -212,14 +212,14 @@ function drawChartPieWWF() {
     chart.draw(data, options);
 }
 function drawChartBarWWF() {
-    var data = google.visualization.arrayToDataTable([
+     var data = google.visualization.arrayToDataTable([
         ['Charity', 'Euro'],
-        ['Plan', 1 ],
-        ['Dogs', 2],
-        ['Oscare', 3],
-        ['Cancer', 1],
-        ['Clowns', 2],
-        ['WWF', 3]
+        ['Plan', 10],
+        ['Dogs', 20],
+        ['Oscare', 30],
+        ['Cancer', 10],
+        ['Clowns', 20],
+        ['WWF', 30]
     ]);
 
     // Optional; add a title and set the width and height of the chart
