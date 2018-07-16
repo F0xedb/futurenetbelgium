@@ -107,12 +107,14 @@ function loadDefaultJSON(callback) {
 
 function setAllHrefAttrib(){
 	var links = getAllTagsWithAttribute("href");
-	for(var i =0; i < links.length; i++){ 
-		if(links[i].href.includes("?") && !links[i].href.includes("lang")){
-			links[i].href = links[i].href + "&lang=" + test;
-		}else if(!links[i].href.includes("lang")){
-			links[i].href = links[i].href + "?lang=" + test;
-		}
+	for(var i =0; i < links.length; i++){
+	    if(!links[i].href.includes("#")) {
+            if (links[i].href.includes("?") && !links[i].href.includes("lang")) {
+                links[i].href = links[i].href + "&lang=" + test;
+            } else if (!links[i].href.includes("lang")) {
+                links[i].href = links[i].href + "?lang=" + test;
+            }
+        }
 	}
 }
 function checkLangGET(){
