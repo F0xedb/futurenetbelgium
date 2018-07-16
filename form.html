@@ -120,6 +120,10 @@
                 </div>
                 <p class="help-block text-danger"></p>
               </div>
+              <div class="form-group">
+                <input class="form-control" id="phone" name="phone" type="text"   placeholder="Phonenumber">
+                <p class="help-block text-danger"></p>
+              </div>
 
               <div class="form-group input-group">
                 <div class="input-group-prepend">
@@ -186,6 +190,23 @@
                 <label class="form-check-label" trans="bonus" style="color: #6c757d">
                 </label>
               </div>
+              <style>
+                a:hover{
+                  color: #0056b3;
+                }
+              </style>
+              <br>
+              <div class="form-check">
+                <label class="form-check-label" style="color: #6c757d">
+                  <input class='form-check-input is-invalid' type='checkbox' name='agv' onkeypress="inputbtn(this)" onkeydown="inputbtn(this)"  id='agv' value='true' trans='refPhoto' required>
+                    <a data-toggle="modal" href="#algvwModal1" trans="algvw"></a>
+                  </input>
+                  <div class="invalid-feedback">
+                    You must agree before submitting.
+                  </div>
+                </label>
+
+              </div>
 
               <p trans="formEnd" style="color: #6c757d; margin-top: 3vw; margin-bottom:30px;"></p>
 
@@ -238,6 +259,36 @@
       </div>
     </footer>
 
+    <!-- Algemene voorwaarden -->
+    <div class="portfolio-modal modal fade" id="algvwModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase" trans="algvwtitle1"></h2>
+                  <p class="item-intro text-muted" trans="algvwsub1"></p>
+                  </a>
+                  <p style="text-align:left" trans="algvwtext1"></p>
+                  <p style="text-align:left" trans="algvwtext2"></p>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button" trans="closealgvw">
+                    <i class="fa fa-times"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
 
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -255,5 +306,6 @@
     <script src="general.min.js"></script>
     <script src="js/get.min.js"></script>
     <script src="js/localization.js"></script>
+    <script src="js/inputform.min.js"> </script>
   </body>
 </html>
