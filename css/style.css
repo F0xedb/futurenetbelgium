@@ -14,6 +14,9 @@ footer{
     background-color: #0a3c78;
     color:white;
 }
+footer p{
+    color:white !important;
+}
 
 .flex-containerhor {
     padding: 0;
