@@ -18,6 +18,7 @@ $date = strip_tags(htmlspecialchars($_POST['date']));
 $promote = strip_tags(htmlspecialchars($_POST['gridcheckboxs']));
 $charity = strip_tags(htmlspecialchars($_POST['charity']));
 $bonus = strip_tags(htmlspecialchars($_POST['bonus']));
+$phone = strip_tags(htmlspecialchars($_POST['phone']));
 
 if (isset($_POST['sponsor'])) {
    $sponsor = strip_tags(htmlspecialchars($_POST['sponsor']));
@@ -48,11 +49,17 @@ if (isset($_POST['bonus'])) {
 }else{
    $bonus="Unknown"
 }
+
+if (isset($_POST['phone'])) {
+   $phone = strip_tags(htmlspecialchars($_POST['phone']));
+}else{
+   $phone="Unknown"
+}
    
 // Create the email and send the message
 $to = 'yourname@yourdomain.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
 $email_subject = "Website submition Form:  $name";
-$email_body = "You have received a new message from your website submission form.\n\n"."Here are the details:\n\nName: $prename $name\n\nEmail: $email\n\nref-link: $reflink\n\nSponsor:\n$sponsor"\n\nBirtdate:\n$sdate"\n\nPromote:\n$promote"\n\nCharity:\n$charity"\n\nBonus:\n$bonus";
+$email_body = "You have received a new message from your website submission form.\n\n"."Here are the details:\n\nName: $prename $name\n\nEmail: $email\n\nref-link: $reflink\n\nSponsor:\n$sponsor"\n\nPhone:\n$phone"\n\nBirtdate:\n$sdate"\n\nPromote:\n$promote"\n\nCharity:\n$charity"\n\nBonus:\n$bonus";
 $headers = "From: noreply@yourdomain.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
 $headers .= "Reply-To: $email";
 mail($to,$email_subject,$email_body,$headers);
