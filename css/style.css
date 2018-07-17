@@ -224,7 +224,8 @@ footer p{
 }
 @media only screen and (max-width: 600px) {
     .chartDB {
-        width: 25%;
+        width: 20%;
+
     }
 }
 

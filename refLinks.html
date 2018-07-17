@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/style.min.css">
 
     <link href="css/style2.min.css" rel="stylesheet">
+	<link href="css/style3.css" rel="stylesheet">
 	
 	<!-- icon in tab DB -->
 	<!-- for IE -->
@@ -80,8 +81,8 @@
     <header class="masthead">
       <div class="container">
         <div class="intro-text overlay" style="padding-bottom: 50px;padding-top: 50px;margin-bottom: 25vh;">
-          <div class="intro-lead-in" trans="title"></div>
-          <div class="intro-heading text-uppercase" trans="subtitle"></div>
+          <div class="intro-lead-in smallh2" trans="title"></div>
+          <div class="intro-heading text-uppercase smallh3" trans="subtitle"></div>
 		  <div class="example">
 			<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger " href="#refLinks" trans="buttonRefLinks"></a>
 		  </div>
@@ -94,15 +95,15 @@
       <div class="container2 container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase" trans="reftitle"></h2>
-            <h3 class="section-subheading text-muted" style="margin-bottom:15px" trans="refsub"></h3>
-			<h3  trans="refend"></h3>
+            <h2 class="section-heading text-uppercase smallh3" trans="reftitle"></h2>
+            <h3 class="section-subheading text-muted smallh3" style="margin-bottom:15px" trans="refsub"></h3>
+			<h3 class="smallh3" trans="refend"></h3>
           </div>
         </div>
 	
 			<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for usernames..">
 
-			<table id="myTable" class="container">
+			<table id="myTable" class="container smallh4">
 				<tr class="header">
 					<th id="foto" style="width:20%;">Avatar</th>
 					<th style="width:30%;">Name</th>
@@ -143,23 +144,23 @@
 				</tr>
 				<!-- Dominique Burssens -->
 				<tr>
-					<td><img src="img/team/reflinkpic/nopictureavailable.png" title="Level 1" alt="Not Found" style="width:90px"></td>
+					<td><img src="img/team/reflinkpic/domi.jpg" title="Level 1" alt="Not Found" style="width:90px"></td>
 					<td>Dominique (L1)</td>
 					<td><a href="index.html?ref=poes.fn.xyz" target="_blank">poes.fn.xyz</a></td>
 					<td><img src="img/team/reflinkpic/oscare_logo.png" title="Brandwondenfonds" alt="Not Found" style="width:50px" ></td>
 				</tr>
 				<!-- Tom Meyers -->
 				<tr>
-					<td><img src="img/team/reflinkpic/BART_dans_met_mij.jpg" title="Level 1" alt="Not Found" style="width:90px"></td>
+					<td><img src="img/team/reflinkpic/tom.jpg" title="Level 1" alt="Not Found" style="width:90px"></td>
 					<td>Tom (L1)</td>
 					<td><a href="index.html?ref=F0xedb.fn.xyz" target="_blank">F0xedb.fn.xyz</a></td>
 					<td><img src="img/team/reflinkpic/questionmark.jpg" title="Not yet chosen" alt="Not Found" style="width:50px" ></td>
 				</tr>	
 				<!-- Tim Oprins -->
 				<tr>
-					<td><img src="img/team/reflinkpic/nopictureavailable.png" title="Level 1" alt="Not Found" style="width:90px"></td>
+					<td><img src="img/team/reflinkpic/timoprins.jpg" title="Level 1" alt="Not Found" style="width:90px"></td>
 					<td>Tim Oprins (L1)</td>
-					<td><a href=">index.html?ref=tim.fn.xyz" target="_blank">Timoprins.fn.xyz</a></td>
+					<td><a href=">index.html?ref=Timoprins.fn.xyz" target="_blank">Timoprins.fn.xyz</a></td>
 					<td><img src="img/team/reflinkpic/helping_dogs.png" title="Helping Dogs" alt="Not Found" style="width:50px" ></td>
 				</tr>	
 				<!-- Dries Stappers -->
@@ -184,7 +185,7 @@
 	  
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <p class="large text-muted" trans="refend"></p>
+            <p class="large text-muted smallh3" trans="refend"></p>
           </div>
         </div>
       </div>
@@ -219,8 +220,41 @@
       </div>
       <div class="center">
         <p class="center" trans="footer"></p>
+				<a class="portfolio-link" data-toggle="modal" href="#algvwModal1">
+		 <p class="center" trans="algvw"></p>
+		 </a>
       </div>
     </footer>
+	
+			<!-- Algemene voorwaarden -->
+    <div class="portfolio-modal modal fade" id="algvwModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase" trans="algvwtitle1"></h2>
+                  <p class="item-intro text-muted" trans="algvwsub1"></p>
+				  </a>
+                  <p style="text-align:left" trans="algvwtext1"></p>
+					<p style="text-align:left" trans="algvwtext2"></p>				  
+                  <button class="btn btn-primary" data-dismiss="modal" type="button" trans="closealgvw">
+                    <i class="fa fa-times"></i>
+                    </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
