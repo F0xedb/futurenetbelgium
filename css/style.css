@@ -9,6 +9,9 @@ p,t{
     /*text-shadow: 1px 1px 1px black;*/
     color: #444 !important;
 }
+.color-light{
+    color: #007bff !important;
+}
 
 footer{
     background-color: #0a3c78;
