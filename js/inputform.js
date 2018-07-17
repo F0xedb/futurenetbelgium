@@ -3,6 +3,7 @@ var el2 = document.getElementById("name");
 var el3 = document.getElementById("reflink");
 var el4 = document.getElementById("e-mail");
 var el5 = document.getElementById("agv");
+var el6 = document.getElementById("sponsor");
 
 
 function input(el){
@@ -56,6 +57,7 @@ setInterval(function(){
     input(el3);
     input(el4);
     inputbtn(el5);
+    input(el6);
     if(count()<=0){
         setTravelbtn(true);
     }else{
