@@ -110,19 +110,19 @@
               </div>
               <div class="form-group">
                 <input class="form-control is-invalid" id="sponsor" name="sponsor" type="text"  placeholder="Sponsor username *" required>
-                <div class="valid-feedback">
+                <div class="valid-feedback" trans="feedback7">
                   Looks good!
                 </div>
-                <div class="invalid-feedback">
+                <div class="invalid-feedback" trans="feedback8">
                   Please choose a username.
                 </div>
                 <p class="help-block text-danger"></p>
               </div>
               <div class="form-group">
                 <input class="form-control is-invalid" id="e-mail" name="email" type="text" onkeypress="input(this)" onkeydown="input(this)"  placeholder="E-mail *" required>
-                <div class="valid-feedback" trans="feedback7">
+                <div class="valid-feedback" trans="feedback9">
                 </div>
-                <div class="invalid-feedback" trans="feedback8">
+                <div class="invalid-feedback" trans="feedback10">
                 </div>
                 <p class="help-block text-danger"></p>
               </div>
@@ -226,6 +226,18 @@
                   <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit" trans="mailButton"></button>
                 </div>
             </form>
+			
+			<!-- Db test om feedback te geven dat het gelukt is -->
+			<div id="success_message" style="width:100%; height:100%; display:none; ">
+				<h3>Posted your message successfully!</h3>
+			</div>
+			<div id="error_message" style="width:100%; height:100%; display:none; ">
+                    <h3>Error</h3>
+                    Sorry there was an error sending your form.
+
+			</div>
+			<!-- tot hier -->
+			
           </div>
         </div>
       </div>
