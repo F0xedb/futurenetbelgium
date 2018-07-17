@@ -5,10 +5,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-p,t{
-    /*text-shadow: 1px 1px 1px black;*/
-    color: #444 !important;
-}
+
 .color-light{
     color: #007bff !important;
 }
