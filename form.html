@@ -1,325 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Futurenetbelgium distributors of futurenet">
-    <meta name="author" content="Tom Meyers">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Futurenetbelgium distributors of futurenet">
+  <meta name="author" content="Tom Meyers">
 
-    <title>FutureNetBelgium</title>
+  <title>FutureNetBelgium</title>
 
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/styleform.min.css">
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/styleform.min.css">
 
-    <link href="css/style2.min.css" rel="stylesheet">
+  <link href="css/style2.min.css" rel="stylesheet">
 
-	<!-- icon in tab DB -->
-	<!-- for IE -->
-	<link rel="shortcut icon" type="image/png" href="img/portfolio/favicon.ico" >
-	<link rel="icon" type="image/png" href="img/portfolio/favicon.ico" >
-	
-  </head>
+  <!-- icon in tab DB -->
+  <!-- for IE -->
+  <link rel="shortcut icon" type="image/png" href="img/portfolio/favicon.ico" >
+  <link rel="icon" type="image/png" href="img/portfolio/favicon.ico" >
 
-  <body id="page-top" onload="init();fillDateForm()">
+</head>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" style="background-color: #0a3c78!important;">
-      <!-- Brand -->
-      <a class="navbar-brand" href="#" onclick="travelto('index.html?lang='+test + ref())">
-        <img src="img/futurenetlogo.svg" alt="futurenet" style="width:100px;">
-      </a>
+<body id="page-top" onload="init();fillDateForm()">
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <button class="btn btn-outline-info my-2 my-sm-0" type="submit" trans="mute" id="mute" onclick="mute()"></button>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" style="background-color: #0a3c78!important;">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#" onclick="travelto('index.html?lang='+test + ref())">
+    <img src="img/futurenetlogo.svg" alt="futurenet" style="width:100px;">
+  </a>
 
-      <!-- Links -->
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#" data-toggle="collapse" data-target=".navbar-collapse.show" trans="home" onclick="travelto('index.html?lang='+test  + ref())"></a>
-          </li>
-  <!--        <li class="nav-item">
-            <a class="nav-link" href="show.html" data-toggle="collapse" data-target=".navbar-collapse.show" trans="gallerylink" onclick="travelto('show.html?lang='+test + ref())"></a>
-          </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" trans="pdf" data-toggle="collapse" data-target=".navbar-collapse.show" id="pdf" target="_blank"></a>
-            </li>
--->
-          <!-- Dropdown -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              Language
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#" onclick="loadlang('en');setAllHrefAttrib()">English</a>
-              <a class="dropdown-item" href="#" onclick="loadlang('nl');setAllHrefAttrib()">Nederlands</a>
-              <a class="dropdown-item" href="#" onclick="loadlang('fr');setAllHrefAttrib()">Francais</a>
-            </div>
-          </li>
-        </ul>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <button class="btn btn-outline-info my-2 my-sm-0" type="submit" trans="mute" id="mute" onclick="mute()"></button>
+
+  <!-- Links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-toggle="collapse" data-target=".navbar-collapse.show" trans="home" onclick="travelto('index.html?lang='+test  + ref())"></a>
+      </li>
+      <!--        <li class="nav-item">
+                <a class="nav-link" href="show.html" data-toggle="collapse" data-target=".navbar-collapse.show" trans="gallerylink" onclick="travelto('show.html?lang='+test + ref())"></a>
+              </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" trans="pdf" data-toggle="collapse" data-target=".navbar-collapse.show" id="pdf" target="_blank"></a>
+                </li>
+    -->
+      <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Language
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#" onclick="loadlang('en');setAllHrefAttrib()">English</a>
+          <a class="dropdown-item" href="#" onclick="loadlang('nl');setAllHrefAttrib()">Nederlands</a>
+          <a class="dropdown-item" href="#" onclick="loadlang('fr');setAllHrefAttrib()">Francais</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Contact -->
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase" trans="loginfrom"></h2>
+        <h3 class="section-subheading text-muted" trans="loginfromsub"></h3>
       </div>
-    </nav>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <form id="contactForm" name="sentMessage" novalidate="novalidate" method="post" action="mail/login.php">
+          <div class="row">
+            <div class="form-group col-md-6">
+              <input class="form-control is-invalid" id="prename" name="prename" type="text" placeholder="FirstName *" onkeypress="input(this)" required>
+              <div class="valid-feedback" trans="feedback1">
+              </div>
+              <div class="invalid-feedback" trans="feedback2">
+              </div>
+              <p class="help-block text-danger"></p>
+            </div>
+            <div class="form-group col-md-6">
+              <input class="form-control is-invalid" id="name" name="name" type="text" placeholder="Name *" onkeypress="input(this)" required>
+              <div class="valid-feedback" trans="feedback3">
+              </div>
+              <div class="invalid-feedback" trans="feedback4">
+              </div>
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="form-group">
+            <input class="form-control is-invalid" id="reflink" name="reflink" type="text" placeholder="Ref-Link (username.fn.xyz) *" onkeypress="input(this)" required>
+            <div class="valid-feedback" trans="feedback5">
+            </div>
+            <div class="invalid-feedback" trans="feedback6">
+            </div>
+            <p class="help-block text-danger"></p>
+          </div>
+          <div class="form-group">
+            <input class="form-control is-invalid" id="sponsor" name="sponsor" type="text"  placeholder="Sponsor username *" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+              Please choose a username.
+            </div>
+            <p class="help-block text-danger"></p>
+          </div>
+          <div class="form-group">
+            <input class="form-control is-invalid" id="e-mail" name="email" type="text" onkeypress="input(this)" onkeydown="input(this)"  placeholder="E-mail *" required>
+            <div class="valid-feedback" trans="feedback7">
+            </div>
+            <div class="invalid-feedback" trans="feedback8">
+            </div>
+            <p class="help-block text-danger"></p>
+          </div>
+          <div class="form-group">
+            <input class="form-control" id="phone" name="phone" type="text"   placeholder="Phonenumber">
+            <p class="help-block text-danger"></p>
+          </div>
 
-    <!-- Contact -->
-    <section id="contact">
+          <div class="form-group input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroupPrepend3" trans="birthdate">@</span>
+            </div>
+            <input class="form-control" type="date" id="date" name="date" value="2011-08-19" id="example-date-input">
+          </div>
+
+          <fieldset class="form-group" style="color: #6c757d">
+            <p class="col-form-legend" style="color: white;" trans="freeAcc"></p>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <label class="form-check-label" trans="reflink">
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label" trans="refname">
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label" trans="refPhoto">
+                </label>
+              </div>
+            </div>
+            <p class="col-form-legend" style="color: #777;margin-top: 5px" trans="freeAccsubtext"></p>
+          </fieldset>
+
+          <fieldset class="form-group" style="color: #6c757d">
+            <p class="col-form-legend" style="color: white;" trans="charity"></p>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <label class="form-check-label" trans="charity1">
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label" trans="charity2">
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label" trans="charity3">
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label" trans="charity4">
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label" trans="charity5">
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label" trans="charity6">
+                </label>
+              </div>
+            </div>
+
+          </fieldset>
+
+          <div class="form-check">
+            <label class="form-check-label" trans="bonus" style="color: #6c757d">
+            </label>
+          </div>
+          <style>
+            a:hover{
+              color: #0056b3;
+            }
+          </style>
+          <br>
+          <div class="form-check">
+            <label class="form-check-label" style="color: #6c757d">
+              <input class='form-check-input is-invalid' type='checkbox' name='agv' onkeypress="inputbtn(this)" onkeydown="inputbtn(this)"  id='agv' value='true' trans='refPhoto' required>
+              <div class="row" style="padding-left: 20px;">
+                <p class="large text-muted" ></p>
+                <t class="large text-muted" trans="algvwForm1"></t>
+                <a data-toggle="modal" href="#algvwModal1" trans="algvw"></t></a>
+                <t class="large text-muted" trans="algvwForm2"></t>
+              </div>
+
+              </input>
+              <div class="invalid-feedback" trans="feedback12">
+
+              </div>
+            </label>
+
+          </div>
+
+          <p trans="formEnd" style="color: #6c757d; margin-top: 3vw; margin-bottom:30px;"></p>
+
+
+
+
+          <div class="clearfix"></div>
+          <div class="col-lg-12 text-center">
+            <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit" trans="mailButton"></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- Footer -->
+<footer class="flex-containercentervert">
+  <div class="flex-containerhor upperpadding">
+    <ul class="list-inline social-buttons">
+      <li class="list-inline-item">
+        <a href="https://twitter.com/FuturenetB">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://www.facebook.com/groups/367332583794122/">
+          <i class="fa fa-facebook"></i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a href="#">
+          <i class="fa fa-linkedin"></i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a href="#">
+          <i class="fa fa-wifi"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="center">
+    <p class="center" trans="footer"></p>
+  </div>
+</footer>
+
+<!-- Algemene voorwaarden -->
+<div class="portfolio-modal modal fade" id="algvwModal1" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl"></div>
+        </div>
+      </div>
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase" trans="loginfrom"></h2>
-            <h3 class="section-subheading text-muted" trans="loginfromsub"></h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <form id="contactForm" name="sentMessage" novalidate="novalidate" method="post" action="mail/login.php">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <input class="form-control is-invalid" id="prename" name="prename" type="text" placeholder="FirstName *" onkeypress="input(this)" required>
-                  <div class="valid-feedback" trans="feedback1">
-                  </div>
-                  <div class="invalid-feedback" trans="feedback2">
-                  </div>
-                  <p class="help-block text-danger"></p>
-                </div>
-                <div class="form-group col-md-6">
-                    <input class="form-control is-invalid" id="name" name="name" type="text" placeholder="Name *" onkeypress="input(this)" required>
-                  <div class="valid-feedback" trans="feedback3">
-                  </div>
-                  <div class="invalid-feedback" trans="feedback4">
-                  </div>
-                    <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="form-group">
-                  <input class="form-control is-invalid" id="reflink" name="reflink" type="text" placeholder="Ref-Link (username.fn.xyz) *" onkeypress="input(this)" required>
-                <div class="valid-feedback" trans="feedback5">
-                </div>
-                <div class="invalid-feedback" trans="feedback6">
-                </div>
-                  <p class="help-block text-danger"></p>
-              </div>
-              <div class="form-group">
-                <input class="form-control is-invalid" id="sponsor" name="sponsor" type="text"  placeholder="Sponsor username *" required>
-                <div class="valid-feedback" trans="feedback7">
-                  Looks good!
-                </div>
-                <div class="invalid-feedback" trans="feedback8">
-                  Please choose a username.
-                </div>
-                <p class="help-block text-danger"></p>
-              </div>
-              <div class="form-group">
-                <input class="form-control is-invalid" id="e-mail" name="email" type="text" onkeypress="input(this)" onkeydown="input(this)"  placeholder="E-mail *" required>
-                <div class="valid-feedback" trans="feedback9">
-                </div>
-                <div class="invalid-feedback" trans="feedback10">
-                </div>
-                <p class="help-block text-danger"></p>
-              </div>
-              <div class="form-group">
-                <input class="form-control" id="phone" name="phone" type="text"   placeholder="Phonenumber">
-                <p class="help-block text-danger"></p>
-              </div>
-
-              <div class="form-group input-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="inputGroupPrepend3" trans="birthdate">@</span>
-                </div>
-                  <input class="form-control" type="date" id="date" name="date" value="2011-08-19" id="example-date-input">
-              </div>
-
-              <fieldset class="form-group" style="color: #6c757d">
-                <p class="col-form-legend" style="color: white;" trans="freeAcc"></p>
-                <div class="col-sm-10">
-                  <div class="form-check">
-                    <label class="form-check-label" trans="reflink">
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <label class="form-check-label" trans="refname">
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <label class="form-check-label" trans="refPhoto">
-                    </label>
-                  </div>
-                </div>
-                <p class="col-form-legend" style="color: #777;margin-top: 5px" trans="freeAccsubtext"></p>
-              </fieldset>
-
-              <fieldset class="form-group" style="color: #6c757d">
-                <p class="col-form-legend" style="color: white;" trans="charity"></p>
-                <div class="col-sm-10">
-                  <div class="form-check">
-                    <label class="form-check-label" trans="charity1">
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <label class="form-check-label" trans="charity2">
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <label class="form-check-label" trans="charity3">
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <label class="form-check-label" trans="charity4">
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <label class="form-check-label" trans="charity5">
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <label class="form-check-label" trans="charity6">
-                    </label>
-                  </div>
-                </div>
-
-              </fieldset>
-
-              <div class="form-check">
-                <label class="form-check-label" trans="bonus" style="color: #6c757d">
-                </label>
-              </div>
-              <style>
-                a:hover{
-                  color: #0056b3;
-                }
-              </style>
-              <br>
-              <div class="form-check">
-                <label class="form-check-label" style="color: #6c757d">
-                  <input class='form-check-input is-invalid' type='checkbox' name='agv' onkeypress="inputbtn(this)" onkeydown="inputbtn(this)"  id='agv' value='true' trans='refPhoto' required>
-                    <div class="row" style="padding-left: 20px;">
-                      <p class="large text-muted" ></p>
-                      <t class="large text-muted" trans="algvwForm1"></t>
-                      <a data-toggle="modal" href="#algvwModal1" trans="algvw"></t></a>
-                      <t class="large text-muted" trans="algvwForm2"></t>
-                    </div>
-					
-                  </input>
-                  <div class="invalid-feedback" trans="feedback12">
-                    
-                  </div>
-                </label>
-
-              </div>
-
-              <p trans="formEnd" style="color: #6c757d; margin-top: 3vw; margin-bottom:30px;"></p>
-
-
-
-
-              <div class="clearfix"></div>
-                <div class="col-lg-12 text-center">
-                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit" trans="mailButton"></button>
-                </div>
-            </form>
-			
-			<!-- Db test om feedback te geven dat het gelukt is -->
-			<div id="success_message" style="width:100%; height:100%; display:none; ">
-				<h3>Posted your message successfully!</h3>
-			</div>
-			<div id="error_message" style="width:100%; height:100%; display:none; ">
-                    <h3>Error</h3>
-                    Sorry there was an error sending your form.
-
-			</div>
-			<!-- tot hier -->
-			
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-
-
-    <!-- Footer -->
-    <footer class="flex-containercentervert">
-      <div class="flex-containerhor upperpadding">
-        <ul class="list-inline social-buttons">
-          <li class="list-inline-item">
-            <a href="https://twitter.com/FuturenetB">
-              <i class="fa fa-twitter"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://www.facebook.com/groups/367332583794122/">
-              <i class="fa fa-facebook"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">
-              <i class="fa fa-linkedin"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">
-              <i class="fa fa-wifi"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="center">
-        <p class="center" trans="footer"></p>
-      </div>
-    </footer>
-
-    <!-- Algemene voorwaarden -->
-    <div class="portfolio-modal modal fade" id="algvwModal1" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase" trans="algvwtitle1"></h2>
-                  <p class="item-intro text-muted" trans="algvwsub1"></p>
-                  </a>
-                  <p style="text-align:left" trans="algvwtext1"></p>
-                  <p style="text-align:left" trans="algvwtext2"></p>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button" trans="closealgvw">
-                    <i class="fa fa-times"></i>
-                  </button>
-                </div>
-              </div>
+          <div class="col-lg-8 mx-auto">
+            <div class="modal-body">
+              <!-- Project Details Go Here -->
+              <h2 class="text-uppercase" trans="algvwtitle1"></h2>
+              <p class="item-intro text-muted" trans="algvwsub1"></p>
+              </a>
+              <p style="text-align:left" trans="algvwtext1"></p>
+              <p style="text-align:left" trans="algvwtext2"></p>
+              <button class="btn btn-primary" data-dismiss="modal" type="button" trans="closealgvw">
+                <i class="fa fa-times"></i>
+              </button>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+</div>
 
 
 
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <script src="js/index.min.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="general.min.js"></script>
-    <script src="js/get.min.js"></script>
-    <script src="js/localization.js"></script>
-    <script src="js/inputform.min.js"> </script>
-  </body>
+<script src="js/index.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="general.min.js"></script>
+<script src="js/get.min.js"></script>
+<script src="js/localization.js"></script>
+<script src="js/inputform.min.js"> </script>
+</body>
 </html>
