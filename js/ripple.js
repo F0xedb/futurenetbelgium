@@ -56,3 +56,4 @@ for (var i = 0; i < button.length; i++) {
         },700);
     })
 }
+
