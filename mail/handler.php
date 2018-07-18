@@ -16,7 +16,7 @@ $pp = new FormHandler();
 $validator = $pp->getValidator();
 $validator->field('email')->isEmail();
 
-$pp->sendEmailTo('proost.android@gmail.com'); // ← Your email here
+$pp->sendEmailTo(''); // ← Your email here
 
 // meerdere kan zo : $fh->sendEmailTo(['someone@gmail.com', 'someone.else@gmail.com']);
 
