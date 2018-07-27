@@ -101,21 +101,43 @@
     </div>
     <header class="masthead">
       <div class="container">
-        <div class="intro-text overlay" style="padding-bottom: 100px;padding-top: 50px;top: 50px; margin-top: 150px; margin-bottom: 150px;">
+        <div class="intro-text overlay" style="padding-bottom: 100px;padding-top: 50px;top: 50px; margin-top: 100px; margin-bottom: 100px;">
 		 
           <div class="intro-lead-in smallh2" trans="title"></div>
           <div class="intro-heading text-uppercase" trans="subtitle"></div>  
-		     <div class="example">
-			<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger smallh4" trans="button" id="person" href="#" onclick="MainbtnClick()"></a>
-		  </div>
-		  <a >
-		  <br>
-			<h4 class="section-subheading text-muted" >Scroll</h4>
-            <div><i class="fa fa-arrow-circle-down fa-2x" style="color: gray;"></i></div>
-			</a>
-        </div>
-      </div>
-	  <p>  </p>
+		  
+		  		  
+		  <!-- TEST kleine foto's-->
+    
+			<div class="row smallh5">
+				<div class="timeline-image col-sm-4">
+					<div class="team-member" >
+						<img class="rounded-circle" style="max-width:30%; height:auto" onmouseover="this.src='img/team/bart1b.jpg'" onmouseout="this.src='img/team/bart.jpg';" src="img/team/bart.jpg" alt=""  onclick="travelbart()" id="bart" >
+						<h4 trans="member1"></h4>
+						<p class="text-muted" trans="member1position"></p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="example">
+						<!--	<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger smallh4" trans="button" id="person" href="#team" "></a>  -->
+						<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger smallh4" trans="button" id="person" href="#" onclick="MainbtnClick()"></a> 
+					</div>
+				</div>
+				<div class="timeline-image col-sm-4">
+					<div class="team-member">
+						<img class="rounded-circle" style="max-width:30%; height:auto" onmouseover="this.src='img/team/ivan1b.jpg'" onmouseout="this.src='img/team/ivan.jpg';" src="img/team/ivan.jpg" alt="" onclick="travelivan()" id="ivan"	>
+						<h4 trans="member2"></h4>
+						<p class="text-muted" trans="member2position"></p>
+					</div>
+				</div>
+			</div>
+		 <div><i class="fa fa-arrow-circle-down fa-3x" style="color: gray;"></i>
+			<p> Scroll </p>
+		</div>
+       </div>
+   </div>
+   
+  
     </header>
 	
 	
@@ -134,12 +156,12 @@
     </section>
 -->
     <!-- Services -->
-    <section id="services">
+    <section id="services smallh6" >
       <div class="container">
 	  	<!-- Wat is dat nu eigenlijk voor iets :-) FutureNet??? -->
 	    <div class="row">
 		   <div class="col-lg-12 text-center">
-            <h2 class="section-heading" style="font-size: 32px;" trans="Watisfuturenet"></h2>
+            <h2 class="section-heading smallh6" style="font-size: 32px;" trans="Watisfuturenet"></h2>
             <p class="section-subheading text-muted">
               <t trans="Watisfuturenet2"></t>
               <a class="color-light" data-toggle="modal" href="#VerklaarModal1">¹</a>
@@ -167,7 +189,11 @@
 	    <div class="row">
 		   <div class="col-lg-12 text-center">
             <h2 class="section-heading" style="font-size: 32px;" trans="Watisfuturenetbelgium1"></h2>
-            <p class="section-subheading text-muted" trans="Watisfuturenetbelgium2"></p>
+            <p class="section-subheading text-muted">
+				<t trans="Watisfuturenetbelgium2"></t>
+				<a class="color-light" data-toggle="modal" href="#VerklaarModal1">¹</a>
+				<t trans="Watisfuturenetbelgium2-1"></t>
+			</p>
 			<p></p>
 			<br>
 		</div>
@@ -246,7 +272,7 @@
         <div class="row" >
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase smallh2" style="font-size: 32px;" trans="verdienste"></h2>
-            <h3 class="section-subheading text-muted" trans="quote"></h3>
+            <h3 class="section-subheading text-muted" style= "margin-bottom: 25px;" trans="quote"></h3>
             <h3 class="section-subheading text-muted" trans="quote2"></h3>
           </div>
         </div>
@@ -492,7 +518,7 @@
     </section>
 
     <!-- Team -->
-    <section class="bg-light" id="team">
+    <section class="bg-light" id="team" style="padding-top:50px" >
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -639,10 +665,22 @@
         </ul>
       </div>
       <div class="center">
-        <p class="center" trans="footer"></p>
-		<a class="portfolio-link" data-toggle="modal" href="#algvwModal1">
-		 <p class="center" trans="algvw"></p>
-		 </a>
+		<div class="row col-sm-12 text-center">
+			<p class="center" trans="footer" style="font-size: 0.7rem;"></p>
+		</div>
+		<div class="row">
+			<div class="col-sm-6 col-xs-6">
+				<a class="portfolio-link"  data-toggle="modal" href="#algvwModal1">
+					<p style="text-align:right" trans="algvw"></p>
+				</a>
+			</div>
+			<div class="col-sm-6 col-xs-6">
+				<a class="portfolio-link" data-toggle="modal" href="#VerklaarModal1">
+					<p style="text-align:left" trans="Verklaartitle1"></p>
+				</a>
+			</div>
+		 </div>
+		 
       </div>
     </footer>
 	
@@ -694,8 +732,19 @@
                   <h2 class="text-uppercase smallh2" trans="Verklaartitle1"></h2>
                   <p class="item-intro text-muted smallh2" trans="Verklaarsub1"></p>
 				  
-					<p style="text-align:left" trans="Verklaartext1"></p>
-					<p style="text-align:left" trans="Verklaartext2"></p>	
+					<p style="text-align:left">
+						<t trans="Verklaartext1"></t>
+						<t trans="Verklaartext2"></t>
+						<t trans="Verklaartext6"></t>
+						<t trans="Verklaartext7"></t>
+						<t trans="Verklaartext3"></t>
+					</p>
+					<p><img class="img-fluid d-block mx-auto" src="img/portfolio/mat.jpg" alt=""></p>
+					<p style="text-align:left">
+						<t trans="Verklaartext4"></t>
+						<t trans="Verklaartext5"></t>
+						
+					</p>	
 					<p style="text-align:left" trans="Verklaartextend"></p>
                   <button class="btn btn-primary" data-dismiss="modal" type="button" trans="closeVerklaar">
                     <i class="fa fa-times"></i>
