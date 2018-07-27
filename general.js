@@ -12,7 +12,7 @@ var allowed = {
         "luckyfuture16.fn.xyz",
         "poes.fn.xyz",
         "F0xedb.fn.xyz",
-        "Timoprins.fn.xyz",
+        "timoprins.fn.xyz",
         "driesstappers.fn.xyz",
         "baardt.fn.xyz",
         "brunette13.fn.xyz",
@@ -25,8 +25,8 @@ var allowed = {
         "Dominique",
         "Tom",
         "Tim Oprins",
-        "Dries Stappers",
-        "Jurgen Enneman",
+        "Dries-Stappers",
+        "Jurgen-Enneman",
         "Nette",
         "Lise"
     ]
