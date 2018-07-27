@@ -15,5 +15,35 @@
 		height: 50%;
 		width: 50%;
 		margin-left: 2.5%;
+	}
+		
+	.smallh5  {
+		font-size: 1.2em !important;
+		margin-bottom: 500px;
+	}
+	
+	.smallh5 h4, p {
+		font-size: 0.8em !important;
+	}
+
+	.smallh5 img {
+	    max-width: 20%;
+		height: 50%;
+		width: 50%;
+		margin-left: 2.5%;
+		margin-top:20px;
   }
+  	.smallh6  {
+		padding-top: 450px;
+	}
+}
+
+@media screen and (min-width: 700px) {
+	.smallh6  section {
+		padding-bottom: 10px;
+		padding-top: 50px;
+		top: 10px; 
+		margin-top: 10px; 
+		margin-bottom: 100px;
+	}
 }
