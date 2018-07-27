@@ -9,13 +9,25 @@ var allowed = {
     "people":[
         "proost.fn.xyz",
         "ivanow.fn.xyz",
+        "luckyfuture16.fn.xyz",
+        "poes.fn.xyz",
+        "F0xedb.fn.xyz",
         "Timoprins.fn.xyz",
-        "driesstappers.fn.xyz"
+        "driesstappers.fn.xyz",
+        "baardt.fn.xyz",
+        "brunette13.fn.xyz",
+        "bokike.fn.xyz"
     ],
     "text":[
         "Bart",
         "Ivan",
+        "Luke",
+        "Dominique",
+        "Tom",
         "Tim Oprins",
-        "Dries Stappers"
+        "Dries Stappers",
+        "Jurgen Enneman",
+        "Nette",
+        "Lise"
     ]
 };
