@@ -19,7 +19,7 @@
 		
 	.smallh5  {
 		font-size: 1.2em !important;
-		margin-bottom: 500px;
+		margin-bottom: 10px;
 	}
 	
 	.smallh5 h4, p {
@@ -32,11 +32,15 @@
 		width: 50%;
 		margin-left: 2.5%;
 		margin-top:20px;
+
   }
   	.smallh6  {
-		padding-top: 450px;
+		padding-top: 650px;
 	}
+
+
 }
+
 
 @media screen and (min-width: 700px) {
 	.smallh6  section {
@@ -46,4 +50,5 @@
 		margin-top: 10px; 
 		margin-bottom: 100px;
 	}
+
 }

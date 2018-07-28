@@ -13,6 +13,8 @@ google.charts.setOnLoadCallback(drawChartBarClini);
 google.charts.setOnLoadCallback(drawChartPieWWF);
 google.charts.setOnLoadCallback(drawChartBarWWF);
 
+
+
 // Draw the chart and set the chart values
 function drawChartPiePlan() {
     var data = google.visualization.arrayToDataTable([
@@ -25,7 +27,7 @@ function drawChartPiePlan() {
         ['WWF', 25]
     ]);
     // Optional; add a title and set the width and height of the chart
-    var options = {'title':'Distribution Charity up till now (in %)', 'width':400, 'height':400, slices: { 0: {offset: 0.2} } , is3D: true};
+    var options = {'title':'Distribution Charity up till now (in %)', width: '100%', height: '500px', slices: { 0: {offset: 0.2} } , is3D: true};
 
     // Display the chart inside the <div> element with id="piechart"
     var chart = new google.visualization.PieChart(document.getElementById('piechartplan'));
@@ -43,7 +45,7 @@ function drawChartBarPlan() {
     ]);
 
     // Optional; add a title and set the width and height of the chart
-    var options = {'title':'Distribution Charity up till now (in Euro)', 'width':400, 'height':400};
+    var options = {'title':'Distribution Charity up till now (in Euro)', width: '100%', height: '500px'};
 
     // Display the chart inside the <div> element with id="barchart"
     var chart = new google.visualization.ColumnChart(document.getElementById('barchartplan'));

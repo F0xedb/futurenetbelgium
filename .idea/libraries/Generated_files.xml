@@ -12,6 +12,7 @@
         <item url="file://$PROJECT_DIR$/js/index.min.js" />
         <item url="file://$PROJECT_DIR$/js/inputform.min.js" />
         <item url="file://$PROJECT_DIR$/js/jqBootstrapValidation.min.js" />
+        <item url="file://$PROJECT_DIR$/js/jquery.min.js" />
         <item url="file://$PROJECT_DIR$/js/search.min.js" />
         <item url="file://$PROJECT_DIR$/js/submissionDB.min.js" />
       </sourceFilesUrls>
@@ -27,6 +28,7 @@
       <root url="file://$PROJECT_DIR$/js/index.min.js" />
       <root url="file://$PROJECT_DIR$/js/inputform.min.js" />
       <root url="file://$PROJECT_DIR$/js/jqBootstrapValidation.min.js" />
+      <root url="file://$PROJECT_DIR$/js/jquery.min.js" />
       <root url="file://$PROJECT_DIR$/js/search.min.js" />
       <root url="file://$PROJECT_DIR$/js/submissionDB.min.js" />
     </CLASSES>
