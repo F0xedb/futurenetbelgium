@@ -7,19 +7,23 @@ if(empty($_POST['prename'])      ||
    empty($_POST['email']))
    {
    echo "No arguments Provided!";
-   return '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>byebye</title></head><body><script>window.location.href="../index.html";</script></body></html>';
+   return '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>byebye</title></head><body><script>window.location.href="form.html";</script></body></html>';
    }
    
 $prename = strip_tags(htmlspecialchars($_POST['prename']));
 $name = strip_tags(htmlspecialchars($_POST['name']));
 $reflink = strip_tags(htmlspecialchars($_POST['reflink']));
-$email = strip_tags(htmlspecialchars($_POST['email']));
 $sponsor = strip_tags(htmlspecialchars($_POST['sponsor']));
+$email = strip_tags(htmlspecialchars($_POST['email']));
+$phone = strip_tags(htmlspecialchars($_POST['phone']));
 $date = strip_tags(htmlspecialchars($_POST['date']));
 $promote = strip_tags(htmlspecialchars($_POST['gridcheckboxs']));
+$promote1 = strip_tags(htmlspecialchars($_POST['reflink']));
+$promote2 = strip_tags(htmlspecialchars($_POST['refname']));
+$promote3 = strip_tags(htmlspecialchars($_POST['refPhoto']));
 $charity = strip_tags(htmlspecialchars($_POST['charity']));
 $bonus = strip_tags(htmlspecialchars($_POST['bonus']));
-$phone = strip_tags(htmlspecialchars($_POST['phone']));
+
 
 if (isset($_POST['date'])) {
    $date = strip_tags(htmlspecialchars($_POST['date']));
@@ -58,5 +62,5 @@ $email_body = "You have received a new message from your website submission form
 $headers = "From: noreply@yourdomain.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
 $headers .= "Reply-To: $email";
 mail($to,$email_subject,$email_body,$headers);
-return '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>byebye</title></head><body><script>window.location.href="../index.html";</script></body></html>';
+return '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>byebye</title></head><body><script>window.location.href="form.html";</script></body></html>';
 ?>
